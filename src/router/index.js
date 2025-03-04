@@ -17,12 +17,6 @@ const router = new VueRouter({
       component: Inicio,
     },
     {
-      path: '/introduccion',
-      name: 'introduccion',
-      component: () =>
-        import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
-    },
-    {
       path: '/curso',
       name: 'curso',
       component: Curso,
@@ -58,36 +52,39 @@ const router = new VueRouter({
           path: 'tema5',
           name: 'tema5',
           component: () =>
-            import(/* webpackChunkName: "tema5" */ '../views/Tema5.vue'),
+            import(/* webpackChunkName: "tema5" */ '../views/Tema5_mal.vue'),
+        },
+        {
+          path: 'tema6',
+          name: 'tema6',
+          component: () =>
+            import(/* webpackChunkName: "tema6" */ '../views/Tema6.vue'),
+        },
+        {
+          path: 'tema7',
+          name: 'tema7',
+          component: () =>
+            import(/* webpackChunkName: "tema7" */ '../views/Tema7.vue'),
+        },
+        {
+          path: 'tema8',
+          name: 'tema8',
+          component: () =>
+            import(/* webpackChunkName: "tema8" */ '../views/Tema8.vue'),
+        },
+        {
+          path: 'tema9',
+          name: 'tema9',
+          component: () =>
+            import(/* webpackChunkName: "tema9" */ '../views/Tema9.vue'),
+        },
+        {
+          path: 'tema10',
+          name: 'tema10',
+          component: () =>
+            import(/* webpackChunkName: "tema10" */ '../views/Tema10.vue'),
         },
       ],
-    },
-    {
-      path: '/actividad',
-      name: 'actividad',
-      component: () =>
-        import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
-    },
-    {
-      path: '/glosario',
-      name: 'glosario',
-      component: Glosario,
-    },
-    {
-      path: '/complementario',
-      name: 'complementario',
-      component: Complementario,
-    },
-    {
-      path: '/referencias',
-      name: 'referencias',
-      component: Referencias,
-    },
-    {
-      path: '/sintesis',
-      name: 'sintesis',
-      component: () =>
-        import(/* webpackChunkName: "sintesis" */ '../views/sintesis.vue'),
     },
     {
       path: '/creditos',

@@ -5,551 +5,679 @@
       .titulo-principal.color-acento-contenido
         .titulo-principal__numero
           span 1
-        h1 Titulo de primer nivel
+        h1 Básicos
         
+      #t_1_1.titulo-segundo.color-acento-contenido
+        h2 1.1 Encabezados
 
-      AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
-        .row(titulo="Titulo item 1")
-          .col-md-6.mb-4.mb-md-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
+      h3.mb-5 #[i.fas.fa-angle-double-right.txt--green] Estilo de título para el índice de contenidos:             
+      .row.justify-content-center.align-items-center
+        .col-11
+          .titulo-principal.color-primario
+            .titulo-principal__numero
+              span 1
+            h1 Título principal, 30pt        
 
-        div(titulo="Titulo item 2")
-          figure
-            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-            figcaption Leyenda de la imagen
+          .titulo-segundo.color-primario
+            h2 1.1  Título de segundo nivel, 24pt
 
+          h3.titulo-tercero Título de tercer nivel, 20pt 
 
+          h4.titulo-cuarto Título de cuarto nivel, 18pt
 
+          .titulo-quinto.color-primario
+            h4 Título de quinto nivel, 18pt
 
-      Separador
+          .titulo-sexto.color-primario.mb-4
+            h5 Título de sexto nivel, 16pt
+            span subtitulo
 
-      AcordionA(tipo="b" clase-tarjeta="tarjeta tarjeta--azul")
-        .row(titulo="Titulo item 1")
-          .col-md-6.mb-4.mb-md-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        .row(titulo="Titulo item 2")
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-          .col-md-6.mb-4.mb-md-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-      Separador
-
-      ImagenInfografica.color-primario
-        template(v-slot:imagen)
-          figure
-            img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-            figcaption Leyenda de la imagen
-
-        .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="1")
-          .h5.mb-2 titulo
-          p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-        .tarjeta.color-acento-botones.p-3(x="50%" y="50%" numero="A")
-          .h5.mb-2 titulo
-          p Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-        .tarjeta.color-acento-botones.p-3(x="70%" y="70%" numero="B")
-          .h5.mb-2 titulo
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-      Separador
-
-      ImagenInfograficaB.color-primario
-        template(v-slot:imagen)
-          figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        div(x="20%" y="20%" tooltip="tooltip de max 35 caracteres" numero="1")
-          h5 titulo
-          p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-          p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-          p Lorem ipsum dolor Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-        div(x="50%" y="50%" tooltip="tooltip de max 35 caracteres")
-          h5.mb-2 titulo
-          p Lorem ipsum dolor ddasdasd asdasd asdasd a asd sd asdasd sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-        div(x="70%" y="70%" tooltip="tooltip de max 35 caracteres")
-          .h5.mb-2 titulo
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus
-
-      Separador
-
-
-      TarjetaAudio.color-primario.mb-3(
-        texto="Texto de muestra  "
-        :audio="require('../assets/componentes/audios/audio-ej.mp3')"
-        @audio-hover="mostrarIndicadorTarjetaAudio = false"
-      )
-        .indicador--click(v-if="mostrarIndicadorTarjetaAudio")
-      TarjetaAudio.color-secundario.mb-3(
-        texto="Texto de muestra <br> Texto de muestra "
-        :audio="require('../assets/componentes/audios/audio-ej.mp3')"
-      )
-
-      Separador
-
-
-      .tarjeta.tarjeta--azul.p-4
-        SlyderA(tipo="b")
-          .row
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-
-          .row.justify-content-center.align-items-center.my-lg-4
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-      Separador
-
-      .tarjeta.tarjeta--gris.p-4
-        PasosB.color-acento-contenido
-          .row(titulo="")
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-
-          .row(titulo="")
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .row.justify-content-center.mb-4
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Encabezados.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
 
       Separador
+      #t_1_2.titulo-segundo.color-acento-contenido
+        h2 1.2 Párrafos
 
-      .tarjeta.tarjeta--gris.p-4
-        LineaTiempoC.color-acento-contenido(text-small)
-          .row(titulo="Titulo 1")
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      p.mb-5 Los párrafos mantienen un tamaño regular de 16 pt con interlineado base de 24 pt, sin embargo, existe excepciones para resaltar contenido donde se puede hacer uso de pesos 
+        span.text-thin THIN, 
+        span.text-bold BOLD, 
+        | y 
+        span.text-black BLACK 
+        | o 
+        span.etiqueta etiquetas
+        | de color (según paleta del programa). Así mismo, el ancho de los cajones textos permite variación en las doce (12) columnas. 
 
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-
-
-          .row(titulo="Titulo 2")
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-
-            .col-md-6.mb-4.mb-md-0
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-      Separador
-
-      SlyderF(columnas="col-lg-6 col-xl-4")
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center FIRST
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 2
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 3
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 4
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 5
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 6
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center 7
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-        .tarjeta.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-8
-              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
-          h2.text-center LAST
-          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-            
-      Separador
-
-      LineaTiempoD.color-primario
-        .row(numero="1" titulo="Praesent luctus")
-          .col-md-6.mb-4.mb-md-0
-            p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        .row(numero="2" titulo="Praesent luctus")
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-          .col-md-6.mb-4.mb-md-0
-            p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.  
-
-        .row(numero="3" titulo="Praesent luctus")
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-          .col-md-6.mb-4.mb-md-0
-            p.text-small This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion. 
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Parrafos.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
 
       Separador
+      #t_1_3.titulo-segundo.color-acento-contenido
+        h2 1.3 Listados
 
-      TabsA.color-acento-botones
-        .tarjeta.color-acento-botones--borde.p-4(titulo="PASO 1")
-          h4 PASO 1: The splendor
-          p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
-            strong user style sheets
-            |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
-          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      p.mb-4 Se debe tener en cuenta que las personas realizan un escaneo del mismo para encontrar elementos de su interés. Las listas deben estar compuestas por elementos relacionados entre sí, con un orden específico o un conteo importante.
 
-        .tarjeta.color-acento-botones--borde.p-4(titulo="PASO 2")
-          h4 PASO 2: The splendor
-          .row
-            .col-xl-6.mb-4
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-            .col-xl-6
-              p This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of 
-                strong user style sheets
-                |. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-      Separador
-
-
-      TabsC.color-primario
-        .py-3.py-md-4(titulo="The splendor of the mystery")
-          .row
-            .col-md-6.mb-4.mb-md-0
-              h4 Celebrate your failures 1
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-        .py-3.py-md-4(titulo="Don’t lie to yourself")
-          .row
-            .col-md-6.mb-4.mb-md-0
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-            .col-md-6
-              h4 Celebrate your failures 2
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion. 
-
-
-      Separador
-
-
-      TabsB.color-primario
-        .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
-          .row
-            .col-md-6.mb-4.mb-md-0
-              h4 Celebrate your failures 1
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          
-            .col-md-6
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-        .py-4.py-md-5(titulo="Don’t lie to yourself" :icono="require('@/assets/componentes/ej-04.svg')")
-          .row
-            .col-md-6.mb-4.mb-md-0
-              figure
-                img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-                figcaption Leyenda de la imagen
-            .col-md-6
-              h4 Celebrate your failures 2
-              p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-      Separador
-
-
-
-      LineaTiempoE.color-primario
-        .row(titulo="2014 - Present" subtitulo="Title, Company")
-          .col-lg-6.mb-4.mb-lg-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          .col-lg-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        .row(titulo="2014 - Present" subtitulo="Title, Company")
-          .col-lg-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen      
-          .col-lg-6.mb-4.mb-lg-0
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-
-
-      Separador
-
-      PasosA.color-primario.mb-5(tipo="n")
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Lorem ipsum dolor sit amet.
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        .row
-          .col-md-6.mb-4.mb-md-0
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la Imagen
-          .col-md-6
-            h3 Nullam vulputate mauris eros, ut.
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-            
-
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Duis laoreet est non ligula.
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-        .row
-          .col-md-6.mb-4.mb-md-0
-            h3 Duis laoreet est non ligula.
-            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
-        
-          .col-md-6
-            figure
-              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
-              figcaption Leyenda de la imagen
-
-
-      Separador
-
-      p(data-aos="fade-left").mb-4 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .row.mb-3
+        .col-md.mb-5.mb-sm-0
+          h4 Listado ordenado básico
+          ol.lista-ol
+            li 
+              span.text-bold 1. 
+              | Item lista ordenada 1
+            li 
+              span.text-bold 2. 
+              | Item lista ordenada 2
+            li 
+              span.text-bold a. 
+              | Item lista ordenada a
+            li 
+              span.text-bold b. 
+              | Item lista ordenada b 
+        .col-sm.mb-5.mb-sm-0
+          h4 Listado ordenado cuadro color
+          ol.lista-ol--cuadro
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span 1
+              | Item lista ordenada 1
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span 2
+              | Item lista ordenada 2
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span a
+              | Item lista ordenada a
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span b
+              | Item lista ordenada b
+        .col-sm.mb-5.mb-sm-0
+          h4 Listado ordenado cuadro color + Separadores
+          ol.lista-ol--cuadro.lista-ol--separador
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span 1
+              | Item lista ordenada 1
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span 2
+              | Item lista ordenada 3
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span a
+              | Item lista ordenada a
+            li 
+              .lista-ol--cuadro__vineta.v--green
+                span b
+              | Item lista ordenada b
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Listas.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
       .row
-        .col-sm-6.col-lg-3.mb-4.mb-lg-0
-          .tarjeta--boton.color-primario.p-4
-            .row.justify-content-center.mb-3
-              .col-7
-                figure
-                  img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-
-            h3.text-center Intuition important
-            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-        .col-sm-6.col-lg-3.mb-4.mb-lg-0
-          .tarjeta--boton.color-secundario.p-4
-            .row.justify-content-center.mb-3
-              .col-7
-                figure
-                  img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-
-            h3.text-center Intuition important
-            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-        .col-sm-6.col-lg-3.mb-4.mb-sm-0
-          .tarjeta--boton.color-acento-contenido.text-white--hover.p-4
-            .row.justify-content-center.mb-3
-              .col-7
-                figure
-                  img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-
-            h3.text-center Intuition important
-            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-        .col-sm-6.col-lg-3
-          .tarjeta--boton.color-acento-botones.p-4
-            .row.justify-content-center.mb-3
-              .col-7
-                figure
-                  img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-
-            h3.text-center Intuition important
-            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-
-      Separador
-
-
-
-      .tarjeta--container.row.mb-5
-        .col-md.tarjeta.color-primario.p-5
-          .row.justify-content-center.mb-4
-            .col-6
-              figure
-                img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-            
-          h2.text-center Celebrate your<br>failures
-          p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-        .col-md.tarjeta.color-acento-botones.p-5
-          .row.justify-content-center.mb-4
-            .col-6
-              figure
-                img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-            
-          h2.text-center Sterility leads to<br>susceptibility
-          p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
-        .col-md.tarjeta.color-acento-contenido.text-white.p-5
-          .row.justify-content-center.mb-4
-            .col-6
-              figure
-                img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
-            
-          h2.text-center Sterility leads to<br>susceptibility
-          p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+        .col-sm.mb-5.mb-sm-0
+          h4 Listado no ordenado básico
+          ul.lista-ul
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+            li
+              ul
+                li 
+                  i.lista-ul__vineta
+                  | Item lista no ordenada
+                li 
+                  i.lista-ul__vineta
+                  | Item lista no ordenada
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada
+            li 
+              i.lista-ul__vineta
+              | Item lista no ordenada 
+        .col-sm.mb-5.mb-sm-0
+          h4 Listado no ordenado color
+          ul.lista-ul--color
+            li 
+              i.fas.fa-brain.txt--green
+              | Item lista no ordenada
+            li
+              ul
+                li 
+                  i.fas.fa-bug.txt--green
+                  | Item lista no ordenada
+                li 
+                  i.fas.fa-car-side.txt--green
+                  | Item lista no ordenada
+            li 
+              i.fas.fa-compass.txt--green
+              | Item lista no ordenada
+            li 
+              i.fas.fa-eye.txt--green
+              | Item lista no ordenada 
+        .col-sm
+          h4 Listado no ordenado color + Separadores
+          ul.lista-ul--color.lista-ul--separador
+            li 
+              i.fas.fa-feather.txt--green
+              | Item lista no ordenada
+            li.pb-0
+              ul
+                li 
+                  i.fas.fa-cookie.txt--green
+                  | Item lista no ordenada
+            li 
+              i.fas.fa-hippo.txt--green
+              | Item lista no ordenada
+            li 
+              i.fas.fa-kiwi-bird.txt--green
+              | Item lista no ordenada                                                          
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Listas2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
 
       Separador
+      #t_1_4.titulo-segundo.color-acento-contenido
+        h2 1.4 Bloques de texto destacado
+      p.mb-5 Cuando se tiene una información sencilla que se puede explicar en un solo párrafo y acompañada por una imagen es pertinente usar esta herramienta ya que se puede combinar perfectamente con cualquiera de las herramientas anteriormente descritas. Se puede utilizar cuando tenemos un solo bloque de texto, sin subtópicos, listas, ramificaciones y demás divisiones, complementándolo con las demás herramientas. 
 
       .row
-        .col-sm-6.col-xl-3.mb-4.mb-xl-0
-          .tarjeta.tarjeta-slide.arriba.color-primario(@mouseover="indicadorTarjetaSlide = false")
-            .indicador--hover(v-if="indicadorTarjetaSlide")
-            .tarjeta-slide__contenedor
-              .tarjeta-slide__contenido.p-4.p-xl-5
-                h1 John Doe
-                p Lorem ipsum dolor sit amet, 
-              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/template/avatar.svg')})`}")
-
-        .col-sm-6.col-xl-3.mb-4.mb-xl-0
-          .tarjeta.tarjeta-slide.abajo.color-secundario(@mouseover="indicadorTarjetaSlide = false")
-            .tarjeta-slide__contenedor
-              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/template/avatar.svg')})`}")
-              .tarjeta-slide__contenido.p-4.p-xl-5
-                h1 John Doe
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-        .col-sm-6.col-xl-3.mb-4.mb-sm-0
-          .tarjeta.tarjeta-slide.derecha.color-acento-contenido(@mouseover="indicadorTarjetaSlide = false")
-            .tarjeta-slide__contenedor
-              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/template/avatar.svg')})`}")
-              .tarjeta-slide__contenido.p-4.p-xl-5
-                h1 John Doe
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-        .col-sm-6.col-xl-3
-          .tarjeta.tarjeta-slide.izquierda.color-acento-botones(@mouseover="indicadorTarjetaSlide = false")
-            .tarjeta-slide__contenedor
-              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/template/avatar.svg')})`}")
-              .tarjeta-slide__contenido.p-4.p-xl-5
-                h1 John Doe
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+        .col-lg-5
+          .cajon.color-acento-contenido.p-4
+            .h5 Cajón texto color
+            p.mb-0 Se puede usar dos o más columnas para diagramar el texto, estos elementos pueden presentar contenedores que permitan diferenciar ideas o conceptos.
+        .col-lg-7
+          .cajon-b.color-primario.arriba-izquierda.p-3
+            p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel porta justo. Praesent congue nibh a justo ornare, eget vulputate nisl eleifend. Cras interdum finibus lacinia. Fusce dignissim sapien sit amet orci imperdiet, pharetra maximus nisi ullamcorper. Aliquam interdum elit ac nisi viverra, ultrices finibus est ultricies. Fusce tincidunt velit nulla. Aliquam eleifend libero eu neque rhoncus, sed placerat mi ornare.
+      .row.justify-content-center.mt-4
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+      
+      hr.my-5
+      .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
+        .bloque-texto-g__img(
+          :style="{'background-image': `url(${require('@/assets/curso/temas/ejm.png')})`}")
+        .bloque-texto-g__texto.p-4
+          p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+            br
+            br
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.      
+      .row.justify-content-center.mt-4
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+      
+      hr.my-5
+      .bloque-texto-g.bloque-texto-g--inverso.color-secundario.p-3.p-sm-4.p-md-5
+        .bloque-texto-g__img(
+          :style="{'background-image': `url(${require('@/assets/curso/temas/ejm.png')})`}")
+        .bloque-texto-g__texto.p-4
+          p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+            br
+            br
+            | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure.                 
+      .row.justify-content-center.mt-4
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Cajon3.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
 
       Separador
+      #t_1_5.titulo-segundo.color-acento-contenido
+        h2 1.5 Citas
+      
       .row
-        .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-primario.p-5
-            .tarjeta-numerada__numero
-              .h2 1
-            p.text-center 
-              b Ruta integral de atención en salud 
-            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+        h3.titulo-tercero Cajón texto color A
+        .bloque-texto-a.color-secundario.p-4.p-md-5
+          .row.m-0.align-items-center.justify-content-between
+            .col-lg-4.mb-4.mb-lg-0
+              h2.mb-0 Whatever can be captured in words can be conquered with understanding. 
+            .col-lg-8
+              .bloque-texto-a__texto.p-4
+                p Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
+                  br
+                  br
+                  | Stand so tall that they can’t look past you. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect accept possibility of failure. 
+      .row.justify-content-center.mt-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
-        .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-secundario.p-5
-            .tarjeta-numerada__numero
-              .h2 2
-            p.text-center 
-              b Ruta integral de atención en salud 
-            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+      hr.my-5
+      .row
+        .col-lg-6.mb-5.mb-lg-0
+          h3.titulo-tercero Cajón texto color B
+          .bloque-texto-b.color-primario.p-4
+            .bloque-texto-b__texto
+              i.fas.fa-quote-left
+              h2.mb-0 Can we all just agree as the greater design community to stop talking about Comic Sans altogether?
+              i.fas.fa-quote-right
+        .col-lg-6
+          h3.titulo-tercero Cajón texto color C
+          .bloque-texto-c.color-primario.p-4
+            i.fas.fa-quote-right
+            h2.mb-2 Then you’ll prove to yourself that you can survive anything.
+            span - The graphic designer
+      .row.justify-content-center.mt-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
-        .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-acento-contenido.p-5
-            .tarjeta-numerada__numero
-              .h2 3
-            p.text-center 
-              b Ruta integral de atención en salud 
-            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+      hr.my-5
+      .row.mb-5
+        .col-lg-6.mb-5.mb-lg-0
+          h3.titulo-tercero Cajón texto color D
+          .bloque-texto-d.color-primario.p-4
+            .bloque-texto-d__texto.mb-2
+              i.fas.fa-quote-left
+              h3.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+              i.fas.fa-quote-right
+            .bloque-texto-d__autor 
+              .h5.mb-0 The graphic designer
+              .h6.mb-0 Lorem ipsum dolor sit amet
+        .col-lg-6
+          h3.titulo-tercero Cajón texto color E
+          .bloque-texto-e.color-primario.p-4
+            .bloque-texto-e__texto
+              i.fas.fa-quote-left
+              h4.text-regular Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada.
+              i.fas.fa-quote-right
+            .row.align-items-end
+              .col
+                .bloque-texto-e__autor 
+                  .h5.mb-0 The graphic designer
+                  .h6.mb-0 Lorem ipsum dolor sit amet
+              .col-4
+                img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+      .row.justify-content-center.mt-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas3.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
 
-        .col-md-6.col-xl.mb-4.mb-xl-0
-          .tarjeta-numerada.color-acento-botones.p-5
-            .tarjeta-numerada__numero
-              .h2 4
-            p.text-center 
-              b Ruta integral de atención en salud 
-            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas  
+      hr.my-5
+      h3.titulo-tercero Cajón texto color F
+      .bloque-texto-f.color-primario.pt-4.px-5.mb-5
+        .bloque-texto-f__comillas
+          i.fas.fa-quote-left
+          i.fas.fa-quote-right
+        h4.text-regular.bloque-texto-f__texto Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt augue in augue tempus, in dapibus justo interdum. Sed viverra sed odio quis rhoncus. In elementum purus massa, id venenatis purus ullamcorper ut. Vestibulum vel dictum dolor, nec fringilla orci. Nulla vestibulum, metus nec porttitor bibendum, lectus ligula viverra eros, eget tempor risus nulla pretium justo. Nullam turpis dolor, pharetra vel fermentum at, rutrum in elit. Maecenas vitae hendrerit libero, et ornare augue. Vestibulum iaculis, metus et accumsan malesuada, ligula sapien convallis risus, a iaculis velit ante at turpis. Vivamus bibendum tellus sed tincidunt rhoncus. Nam velit massa, porttitor eget quam et, porttitor viverra eros. Donec eget pharetra metus. Cras porta arcu eu mauris iaculis euismod. Sed fringilla vel nisl quis aliquam.
+        .bloque-texto-f__autor.mb-3
+          h3.mb-0 The graphic designer
+        .bloque-texto-f__avatar
+          .bloque-texto-f__avatar__img
+            img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+      .row.justify-content-center.mt-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Citas4.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+
+      Separador
+      #t_1_6.titulo-segundo.color-acento-contenido
+        h2 1.6 Imágenes 
+
+      .titulo-sexto.color-secundario.mb-3
+        h5 Título de sexto nivel, 16pt
+        span subtitulo  
+            
+      figure.mb-3
+        img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+        figcaption Leyenda de la imagen 
+      .row.justify-content-center.mb-5.me-3
+        .col-auto
+          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Imagenes.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+      hr.my-5
+
+      .row.justify-content-around.mb-4
+        .col-md-6.col-lg-4.mb-4
+          .imagen-titulo--der.color-secundario
+            figure
+              img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+            .imagen-titulo__titulo
+              h4.m-0 Titulo de imagen        
+        .col-md-6.col-lg-4.mb-4
+          .imagen-titulo--izq.color-acento-botones
+            figure
+              img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
+            .imagen-titulo__titulo
+              h4.m-0 Titulo de imagen
+      .row.justify-content-center.mb-5.me-3
+        .col-auto
+          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Imagenes2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+
+      Separador
+      #t_1_7.titulo-segundo.color-acento-contenido
+        h2 1.7 Video 
+
+      figure.mb-3
+        .video
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        figcaption Video: Leyenda del video
+      .row.justify-content-center.mb-4.me-3
+        .col-auto
+          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Video.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente                
+
+
+      Separador
+      #t_1_8.titulo-segundo.color-acento-contenido
+        h2 1.8 Tablas
+
+      .tabla-a.color-primario.mb-4 
+        table
+          caption Leyenda de la tabla
+          thead
+            tr
+              th Encabezado 1
+              th Encabezado 2
+              th Encabezado 3
+              th Encabezado 4
+          tbody
+            tr
+              td Celda 1
+              td Celda 2
+              td Celda 3
+              td Celda 4
+            tr
+              td Celda 1
+              td Celda 2
+              td Celda 3
+              td Celda 4
+            tr
+              td Celda 1
+              td Celda 2
+              td Celda 3
+              td Celda 4
+      .row.justify-content-center.mb-5.me-3
+        .col-auto
+          a.boton.color-botones.b--rad(:href="obtenerLink('/downloads/t1/Tabla1.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente
+
+      hr.my-5
+
+      .tabla-b.color-primario.mb-4
+        .tabla-b__header
+          h4.mb-0 Niveles del lenguaje
+        table
+          caption Leyenda de la tabla
+          tr
+            th Vulgar
+            td Get back to work. Learn from criticism. Creativity is a work-ethic. Design as if your life depended on it. Keep going. It isn’t what you are.
+          tr
+            th Coloquial
+            td It isn’t what you are, but what you’re going to become. Don’t censor yourself.  Sterility leads to susceptibility.It is, in effect, conditioned to prefer bad design.
+          tr
+            th Convencional o estándar
+            td Paul Rand once said, “The public is more familiar with bad design than good design. leassuring. You are not your work. Don’t fucking lie to yourself. Life depended on it. Keep going
+          tr
+            th Técnico
+            td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
+          tr
+            th Formal
+            td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
+      .row.justify-content-center.mb-5.me-3
+        .col-auto
+          a.boton.color-botones.b--rad(:href="obtenerLink('/downloads/t1/Tabla2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+      hr.my-5
+
+      .tabla-c.mb-4
+        table
+          caption Leyenda de la tabla
+          tr
+            th 03 de marzo
+            td 
+              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+            td
+              .h6.mb-0 $12.500.200
+            td
+              .h6.mb-0 $12.500.200
+              span.text-small Textos pequeños
+            td
+              .h6 FDSD33
+          tr
+            th 03 de marzo
+            td 
+              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+            td
+              .h6.mb-0 $12.500.200
+            td
+              .h6.mb-0 $12.500.200
+              span.text-small Textos pequeños
+            td
+              .h6 FDSD33
+          tr
+            th 03 de marzo
+            td 
+              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+            td
+              .h6.mb-0 $12.500.200
+            td
+              .h6.mb-0 $12.500.200
+              span.text-small Textos pequeños
+            td
+              .h6 FDSD33
+          tr
+            th 03 de marzo
+            td 
+              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+            td
+              .h6.mb-0 $12.500.200
+            td
+              .h6.mb-0 $12.500.200
+              span.text-small Textos pequeños
+            td
+              .h6 FDSD33          
+      .row.justify-content-center.mb-5.me-3
+        .col-auto
+          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Tabla3.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+
+      Separador
+      #t_1_9.titulo-segundo.color-acento-contenido
+        h2 1.9 Llamados a la acción
+
+      h3.mb-5 #[i.fas.fa-angle-double-right.txt--green] Botón modal 
+      .row
+        .col-auto
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+            span Abrir modal
+            .indicador--click(v-if="mostrarIndicador")
+        .col
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t 
+            a.lnk(@click="modal1 = true") Abrir modal 
+            |the height of your stature, it’s the heft of your spirit.
+      
+      ModalA(:abrir-modal.sync="modal1")
+        .row.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            h4 Modal 1
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
+              figcaption Leyenda de la imagen
+
+      .row.justify-content-center.mb-5.mt-4
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Modal.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+      h3.mb-5 #[i.fas.fa-angle-double-right.txt--green] Recursos y enlaces externos
+      .row
+        .col-lg-6
+          a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-pdf.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+            
+          a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-doc.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+            
+          a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-xls.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+            
+        .col-lg-6
+          a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-zip.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+            
+          a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-ppt.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
+            
+          a.anexo.mb-4.mb-lg-0(href="https://en.wikipedia.org/wiki/Main_Page" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-link.svg")
+            .anexo__texto
+              p Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias         
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Externos.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+      
+      hr.my-5
+
+      .tarjeta.color-primario.p-3.mb-4
+        .row.justify-content-around.align-items-center
+          .col-3.col-sm-2.col-lg-1
+            img(src="@/assets/componentes/ej-02.svg")
+          .col
+            .row.justify-content-between.align-items-center
+              .col.mb-3.mb-sm-0
+                h4.mb-1 Título del recurso
+                p.mb-0 Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
+              .col-sm-auto
+                a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                  span Descargar
+                  i.fas.fa-file-download
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Externos2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+
+      Separador
+      #t_1_10.titulo-segundo.color-acento-contenido
+        h2 1.10 Botones
+
+      .mb-3
+        a.boton.me-3.indicador__container(
+          :href="obtenerLink('/downloads/prueba.pdf')"
+          target="_blank"
+          type="application/pdf"
+          @mouseover="mostrarIndicador = false")
+          span Descargar
+          i.fas.fa-file-download
+          .indicador--click(v-if="mostrarIndicador")
+      .mb-3
+        a.boton.color-primario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-secundario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-acento-contenido.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+      div.mb-4
+        a.boton--sm.color-primario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-secundario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-acento-contenido.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+        a.boton--sm.color-acento-botones.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          span Descargar
+          i.fas.fa-file-download
+
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Botones.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
+
+
+      Separador
+      #t_1_11.titulo-segundo.color-acento-contenido
+        h2 1.11 Animaciones
+
+      h3.titulo-tercero Fade
+      .row.mb-5
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="fade")
+            h3.mb-0 fade
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up")
+            h3.mb-0 fade-up
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-down")
+            h3.mb-0 fade-down
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-left")
+            h3.mb-0 fade-left
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="fade-right")
+            h3.mb-0 fade-right
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-secundario.text-center.p-3(data-aos="fade-up-right")
+            h3.mb-0 fade-up-right
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-contenido.text-center.p-3(data-aos="fade-up-left")
+            h3.mb-0 fade-up-left
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-down-right")
+            h3.mb-0 fade-down-right
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="fade-down-left")
+            h3.mb-0 fade-down-left
+
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Animaciones.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente 
   </template>
 
 <script>
 export default {
   name: 'Tema1',
   data: () => ({
-    mostrarIndicadorTarjetaAudio: true,
+    mostrarIndicador: true,
+    modal1: false,
+    modal2: false,
   }),
 }
 </script>

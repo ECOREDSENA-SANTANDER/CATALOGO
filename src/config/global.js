@@ -1,17 +1,17 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
+    Name: 'Catálogo componentes web RED SENA SANTANDER',
+    Description: '',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/element_01.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/element_02.png'),
       },
     ],
   },
@@ -23,21 +23,65 @@ export default {
         titulo: 'Volver al inicio',
       },
       {
-        nombreRuta: 'introduccion',
-        icono: 'fas fa-info-circle',
-        titulo: 'Introducción',
-        desarrolloContenidos: true,
-      },
-      {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo: 'Básicos',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
+            titulo: 'Encabezados',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Párrafos',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Listados',
+            hash: 't_1_3',
+          },
+          {
+            numero: '1.4',
+            titulo: 'Bloques de texto destacado',
+            hash: 't_1_4',
+          },
+          {
+            numero: '1.5',
+            titulo: 'Citas',
+            hash: 't_1_5',
+          },
+          {
+            numero: '1.6',
+            titulo: 'Imágenes',
+            hash: 't_1_6',
+          },
+          {
+            numero: '1.7',
+            titulo: 'Video',
+            hash: 't_1_7',
+          },
+          {
+            numero: '1.8',
+            titulo: 'Tablas',
+            hash: 't_1_8',
+          },
+          {
+            numero: '1.9',
+            titulo: 'Llamados a la acción',
+            hash: 't_1_9',
+          },
+          {
+            numero: '1.10',
+            titulo: 'Botones',
+            hash: 't_1_10',
+          },
+          {
+            numero: '1.11',
+            titulo: 'Animaciones',
+            hash: 't_1_11',
           },
         ],
       },
@@ -45,54 +89,58 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo: 'Infografía estática',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Tema 3',
+        titulo: 'Infografía interactiva',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Puntos calientes',
+            hash: 't_3_1',
+          },
+          {
+            numero: '3.2',
+            titulo: 'Ventana modal',
+            hash: 't_3_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Slider de diapositivas',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: 'Slider simple',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: 'Slider con numerales',
+            hash: 't_4_2',
+          },
+          {
+            numero: '4.3',
+            titulo: 'Slide con títulos',
+            hash: 't_4_3',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Carrusel de tarjetas',
         desarrolloContenidos: true,
       },
     ],
     subMenu: [
-      {
-        icono: 'fas fa-sitemap',
-        titulo: 'Síntesis',
-        nombreRuta: 'sintesis',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'actividad',
-        icono: 'far fa-question-circle',
-        titulo: 'Actividad didáctica',
-        desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'glosario',
-        icono: 'fas fa-sort-alpha-down',
-        titulo: 'Glosario',
-      },
-      {
-        nombreRuta: 'complementario',
-        icono: 'far fa-folder-open',
-        titulo: 'Material complementario',
-      },
-      {
-        icono: 'fas fa-book',
-        titulo: 'Referencias bibliográficas',
-        nombreRuta: 'referencias',
-      },
-      {
-        icono: 'fas fa-file-pdf',
-        titulo: 'Descargar PDF',
-        download: 'downloads/dist.pdf',
-      },
-      {
-        icono: 'fas fa-download',
-        titulo: 'Descargar material',
-        download: 'downloads/material.zip',
-      },
       {
         icono: 'far fa-registered',
         titulo: 'Créditos',
