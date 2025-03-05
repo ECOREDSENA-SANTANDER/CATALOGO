@@ -52,7 +52,7 @@ const router = new VueRouter({
           path: 'tema5',
           name: 'tema5',
           component: () =>
-            import(/* webpackChunkName: "tema5" */ '../views/Tema5_mal.vue'),
+            import(/* webpackChunkName: "tema5" */ '../views/Tema5.vue'),
         },
         {
           path: 'tema6',
@@ -83,6 +83,36 @@ const router = new VueRouter({
           name: 'tema10',
           component: () =>
             import(/* webpackChunkName: "tema10" */ '../views/Tema10.vue'),
+        },
+        {
+          path: 'tema11',
+          name: 'tema11',
+          component: () =>
+            import(/* webpackChunkName: "tema11" */ '../views/Tema11.vue'),
+        },
+        {
+          path: 'tema12',
+          name: 'tema12',
+          component: () =>
+            import(/* webpackChunkName: "tema12" */ '../views/Tema12.vue'),
+        },
+        {
+          path: 'tema13',
+          name: 'tema13',
+          component: () =>
+            import(/* webpackChunkName: "tema13" */ '../views/Tema13.vue'),
+        },
+        {
+          path: 'tema14',
+          name: 'tema14',
+          component: () =>
+            import(/* webpackChunkName: "tema14" */ '../views/Tema14.vue'),
+        },
+        {
+          path: 'tema15',
+          name: 'tema15',
+          component: () =>
+            import(/* webpackChunkName: "tema15" */ '../views/Tema15.vue'),
         },
       ],
     },

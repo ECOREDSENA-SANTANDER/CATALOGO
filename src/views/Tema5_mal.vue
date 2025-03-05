@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 5
-      h1 Slider de imágenes
+      h1 Slider de imágenes2
 
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-6
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: 'Tema5',
+  name: 'Tema5Mal',
   data: () => ({
     // variables de vue
     datosSlyder: [

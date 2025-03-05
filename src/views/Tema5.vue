@@ -54,41 +54,42 @@
     .titulo-segundo.color-acento-contenido
       h2 Estructura del componente
 
+    h3.titulo-tercero Tipo 1
     SlyderF.mb-4(columnas="col-lg-6 col-xl-4")
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center FIRST
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center 2
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center 3
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center 4
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center 5
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
       .tarjeta.color-primario.p-4
         .row.justify-content-center.mb-3
           .col-8
-            img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            img(src='@/assets/componentes/ej-05.svg' alt='')
         h2.text-center 6
         p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
     .row.justify-content-center.mb-5
@@ -96,6 +97,50 @@
         a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t5/Carrusel.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
     
+    hr.my-5
+
+    h3.titulo-tercero Tipo 2
+    SlyderF.circl-arrow.mb-4(columnas="col-lg-6 col-xl-4")
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+        h2.text-center FIRST
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+        h2.text-center 2
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+        h2.text-center 3
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+        h2.text-center 4
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+        h2.text-center 5
+        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+      .tarjeta.color-primario.p-4
+        .row.justify-content-center.mb-3
+          .col-8
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+    .row.justify-content-center.mb-5
+      .col-3
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t5/Carrusel2.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
     .row.mb-5
       .col-lg-12.order-2.order-lg-1
         TabsA.color-acento-botones
@@ -151,4 +196,17 @@ export default {
 }
 </script>
 
-<style lang="sass"></style>
+<style lang="sass">
+.circl-arrow .slyder-f__btn i
+  font-size: 1.2rem
+  background-color: #FF4A69
+  //background-color: $color-acento-contenido
+  //color: $white
+  height: 46px
+  width: 46px
+  padding: 5px
+  border-radius: 500px
+  display: flex
+  justify-content: center
+  align-items: center
+</style>

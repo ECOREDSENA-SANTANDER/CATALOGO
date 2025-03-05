@@ -139,6 +139,156 @@ export default {
         titulo: 'Carrusel de tarjetas',
         desarrolloContenidos: true,
       },
+      {
+        nombreRuta: 'tema6',
+        numero: '6',
+        titulo: 'Acordeón',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '6.1',
+            titulo: 'Acordeón (con viñeta en la izquierda) - tipo 1',
+            hash: 't_6_1',
+          },
+          {
+            numero: '6.2',
+            titulo: 'Acordeón (con viñeta en la izquierda) - tipo 2',
+            hash: 't_6_2',
+          },
+          {
+            numero: '6.3',
+            titulo: 'Acordeón con numeral / pasos',
+            hash: 't_6_3',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema7',
+        numero: '7',
+        titulo: 'Pestañas o Tabs',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '7.1',
+            titulo: 'Pestañas verticales',
+            hash: 't_7_1',
+          },
+          {
+            numero: '7.2',
+            titulo: 'Pestañas horizontales - sencillas',
+            hash: 't_7_2',
+          },
+          {
+            numero: '7.3',
+            titulo: 'Pestañas horizontales - iconos',
+            hash: 't_7_3',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema8',
+        numero: '8',
+        titulo: 'Líneas de tiempo',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '8.1',
+            titulo: 'Línea de tiempo - vertical',
+            hash: 't_8_1',
+          },
+          {
+            numero: '8.2',
+            titulo: 'Línea de tiempo - Horizontal',
+            hash: 't_8_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema9',
+        numero: '9',
+        titulo: 'Rutas / Pasos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '9.1',
+            titulo: 'Pasos - Verticales',
+            hash: 't_9_1',
+          },
+          {
+            numero: '9.2',
+            titulo: 'Pasos - Horizontales',
+            hash: 't_9_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema10',
+        numero: '10',
+        titulo: 'Tarjetas',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '10.1',
+            titulo: 'Tipo avatar',
+            hash: 't_10_1',
+          },
+          {
+            numero: '10.2',
+            titulo: 'Conectadas',
+            hash: 't_10_2',
+          },
+          {
+            numero: '10.3',
+            titulo: 'Animadas',
+            hash: 't_10_3',
+          },
+          {
+            numero: '10.4',
+            titulo: 'Tarjetas con número',
+            hash: 't_10_4',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema11',
+        numero: '11',
+        titulo: 'Audio',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema12',
+        numero: '12',
+        titulo: 'Videos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '12.1',
+            titulo: 'Spot animado',
+            hash: 't_12_1',
+          },
+          {
+            numero: '12.2',
+            titulo: 'Motion Graphics',
+            hash: 't_12_2',
+          },
+          {
+            numero: '12.3',
+            titulo: 'Video clase',
+            hash: 't_12_3',
+          },
+          {
+            numero: '12.4',
+            titulo: 'Información del programa',
+            hash: 't_12_4',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema13',
+        numero: '13',
+        titulo: 'Nuevos componentes',
+        desarrolloContenidos: true,
+      },
     ],
     subMenu: [
       {
@@ -173,24 +323,14 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre completo',
+          nombre: 'Milady Tatiana Villamil Castellanos',
           cargo: 'Responsable del ecosistema',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Nombre completo',
+          nombre: 'Claudia Johanna Gómez Pérez',
           cargo: 'Responsable de línea de producción',
-          centro: 'Centro XYZ - Regional XYZ',
-        },
-      ],
-    },
-    {
-      titulo: 'CONTENIDO INSTRUCCIONAL',
-      autores: [
-        {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
-          centro: 'Centro XYZ - Regional XYZ',
+          centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
     },
@@ -198,34 +338,14 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Diseñador de contenidos',
-          centro: 'Centro XYZ - Regional XYZ',
-        },
-        {
-          nombre: 'Nombre responsable',
+          nombre: 'Andrea Paola Botello De la Rosa',
           cargo: 'Desarrollador <i>full stack</i>',
-          centro: 'Centro XYZ - Regional XYZ',
+          centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Animador y productor audiovisual',
-          centro: 'Centro XYZ - Regional XYZ',
-        },
-      ],
-    },
-    {
-      titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
-      autores: [
-        {
-          nombre: 'Nombre responsable',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro XYZ - Regional XYZ',
-        },
-        {
-          nombre: 'Nombre responsable',
-          cargo: 'Evaluador de contenidos inclusivos y accesibles',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Lizeth Karina Manchego',
+          cargo: 'Desarrollador <i>full stack</i>',
+          centro: 'Centro Agroturístico - Regional Santander',
         },
       ],
     },

@@ -1,0 +1,191 @@
+<template lang="pug">
+.curso-main-container.pb-3
+  BannerInterno
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
+    .titulo-principal.color-acento-contenido
+      .titulo-principal__numero
+        span 13
+      h1 Nuevos componentes
+
+    .titulo-segundo.color-acento-contenido
+      h2 Tarjetas
+
+    .row.justify-content-center.mb-4
+      .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
+        .crd_hover_txt
+          .crd_hover_txt--img
+            figure
+              img(src="@/assets/curso/temas/ejm.png", alt="")
+          .crd_hover_txt--body
+            h4.mb-3 Titulo 1
+            p.mb-0 Con este tipo de reportes, los gerentes podrán supervisar específicamente, la labor de cada vendedor y de esta manera, saber en qué les va bien y en cuáles actos hay que mejorar. Aquí también, va a encontrar si su fuerza de ventas está entendiendo sus estrategias y le sea más fácil incentivarlos a aumentar su productividad.
+      .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
+        .crd_hover_txt
+          .crd_hover_txt--img
+            figure
+              img(src="@/assets/curso/temas/ejm.png", alt="")
+          .crd_hover_txt--body
+            h4.mb-3 Titulo 2
+            p.mb-0 Con estos reportes semanales, podrá encontrar las dificultades que pueda tener algún o algunos vendedores y evitar que se pierdan los clientes fijos. Reportar semanalmente, le permite tener un equipo de ventas fortalecido y bien direccionado, con las correcciones necesarias para lograr las metas de ventas propuestas.
+      .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
+        .crd_hover_txt
+          .crd_hover_txt--img
+            figure
+              img(src="@/assets/curso/temas/ejm.png", alt="")
+          .crd_hover_txt--body
+            h4.mb-3 Titulo 3
+            p.mb-0 Con este tipo de reportes usted va a hacer un seguimiento específico a su equipo de ventas respecto a sus objetivos empresariales a largo plazo.
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj1.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+    hr.my-5
+
+
+    .row.mb-4.mb-md-4
+      .col-lg-4.col-md-6.mb-3.mb-md-3
+        .tarjeta.tarjeta-foto-hover
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/temas/ejm.png')
+          .tarjeta-foto-hover__titulo.d-flex.justify-content-center.align-items-center.p-2
+            h4.text-center.text-white.mb-0 Bloqueos mentales
+          .tarjeta-foto-hover__tarjeta.bg-degrade.d-flex.align-items-center.justify-content-center
+            .p-4.text-center
+              h5 Bloqueos mentales
+              p.mb-0  Son los que están relacionados con esos pensamientos ya construidos y que bloquean toda idea nueva, para los cuales se pueden tener pensamientos divergentes, rompiendo rutinas y reconfigurando ideas y procesos para avanzar.
+      .col-lg-4.col-md-6.mb-3.mb-md-3
+        .tarjeta.tarjeta-foto-hover(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/temas/ejm.png')
+          .tarjeta-foto-hover__titulo.d-flex.justify-content-center.align-items-center.p-2
+            h4.text-center.text-white.mb-0 Bloqueos emocionales
+          .tarjeta-foto-hover__tarjeta.bg-degrade.d-flex.align-items-center.justify-content-center
+            .p-4.text-center
+              h5 Bloqueos emocionales
+              p.mb-0 Relacionados con imaginar los peores escenarios, y es acá donde se tiende a pensar en las fatalidades y se considera que renunciar es la mejor opción.
+      .col-lg-4.col-md-6.mb-3.mb-md-3
+        .tarjeta.tarjeta-foto-hover
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/temas/ejm.png')
+          .tarjeta-foto-hover__titulo.d-flex.justify-content-center.align-items-center.p-2
+            h4.text-center.text-white.mb-0 Bloqueos perceptivos
+          .tarjeta-foto-hover__tarjeta.bg-degrade.d-flex.align-items-center.justify-content-center
+            .p-4.text-center
+              h5 Bloqueos perceptivos
+              p.mb-0 Limitan la forma de ver el mundo y terminan por acabar con todas las ideas.
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj2.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+    hr.my-5
+
+    .row.justify-content-center
+      .col-md-5.col-6.mb-4
+        .nav-holder.align-items-center.px-0
+          figure
+            img(src="@/assets/curso/temas/ejm.png", alt="")
+          .text.p-lg-2.p-3
+            .row.px-3.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+              .h5.mt-4.mt-lg-0.mb-2 La luz natural
+              p Producida por los rayos de sol.
+      .col-md-5.col-6.mb-4
+        .nav-holder.align-items-center.px-0(@mouseover="mostrarIndicador2 = false")
+          .indicador--hover(v-if="mostrarIndicador2")
+          figure
+            img(src="@/assets/curso/temas/ejm.png", alt="")
+          .text.p-lg-2.p-3
+            .row.px-3.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+              .h5.mt-4.mt-lg-0.mb-2 La luz artificial
+              p Producida por fuentes lumínicas artificiales.     
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj3.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+    hr.my-5
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-lg-5.col-md-6.mb-3.mb-md-0
+        .content  
+          .content-overlay
+          .btn-numero.btn-bottom-right
+            h3 A
+          img(src="@/assets/curso/temas/ejm.png", alt="Fortalezas") 
+          .tarjeta-details.fadeIn-top.p-1
+            h3 Titulo
+            p Constituyen sus mejores y principales elementos, que les permite cumplir con sus objetivos.
+            p Ejemplos: cuáles son mis ventajas, qué hacemos bien.
+      .col-lg-5.col-md-6.mb-3.mb-md-0
+        .content  
+          .content-overlay
+          .btn-numero.btn-bottom-left
+            h3 B
+          img(src="@/assets/curso/temas/ejm.png", alt="Fortalezas") 
+          .tarjeta-details.fadeIn-top.p-1
+            h3.text-right Titulo
+            p Son los aspectos negativos de la organización-proyecto que, si no se superan, podrán afectar el desarrollo del mismo.
+            p Ejemplos: qué podría ser mejorado, qué se está haciendo mal, qué podría ser evitado. 
+    
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj4.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+
+
+
+    hr.my-5
+
+    .titulo-segundo.color-acento-contenido
+      h2 Imagen Infografica
+
+    ImagenInfografica.color-acento-botones.mb-4
+      template(v-slot:imagen)
+        figure
+          img(src='@/assets/curso/temas/ejm.png', alt='')
+      .tarjeta.row.img-infog.bg-white.align-items-center(x="50%" y="20%")
+        .col-md-4
+          img(src='@/assets/curso/temas/t13/tema1-5-ico1.svg', alt='')
+        .col-md-8.col-12.px-lg-4.px-3.py-1.contenido
+          p.mb-0 Conclusiones y recomendaciones siempre enfocadas al cumplimiento.
+      .tarjeta.row.img-infog.bg-white.align-items-center(x="50%" y="55%")
+        .col-md-4
+          img(src='@/assets/curso/temas/t13/tema1-5-ico1.svg', alt='')
+        .col-md-8.col-12.px-lg-4.px-3.py-1.contenido
+          p.mb-0 Desviaciones en la ejecución de actividades conforme al plan.    
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Img1.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+</template>
+
+<script>
+export default {
+  name: 'Tema13',
+  data: () => ({
+    // variables de vue
+    mostrarIndicador: true,
+    mostrarIndicador2: true,
+  }),
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
+  updated() {
+    this.$aosRefresh()
+  },
+}
+</script>
+
+<style lang="sass"></style>

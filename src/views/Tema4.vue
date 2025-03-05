@@ -59,7 +59,7 @@
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     .row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_a.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_a.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
     
     hr.my-5
@@ -83,7 +83,7 @@
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     .row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_b.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_b.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
     //hr.my-5
@@ -106,7 +106,7 @@
             figcaption Leyenda de la imagen
     //.row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_c.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_simple_c.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
     .row.mb-5.mt-5
@@ -172,7 +172,7 @@
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     .row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_con_numerales.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_con_numerales.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
     .row.mb-3
@@ -231,7 +231,7 @@
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     .row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_numero_titulo.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_numero_titulo.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
     hr.my-5
@@ -256,7 +256,7 @@
             p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
     .row.justify-content-center.mb-5.me-3
       .col-auto
-        a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t4/Slide_navegacion_titulo.txt')" target="_blank" type="application/pdf")
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t4/Slide_navegacion_titulo.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
     .row.mb-5

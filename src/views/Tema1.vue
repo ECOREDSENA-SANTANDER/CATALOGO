@@ -334,9 +334,9 @@
       figure.mb-3
         img(src='@/assets/template/img-placeholder.svg', alt='Texto que describa la imagen')
         figcaption Leyenda de la imagen 
-      .row.justify-content-center.mb-5.me-3
+      .row.justify-content-center.mb-5
         .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Imagenes.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Imagenes.txt')" target="_blank" type="application/pdf")
             span Ver código fuente 
 
       hr.my-5
@@ -354,9 +354,9 @@
               img(src='@/assets/template/img-placeholder-1-1.svg', alt='Texto que describa la imagen')
             .imagen-titulo__titulo
               h4.m-0 Titulo de imagen
-      .row.justify-content-center.mb-5.me-3
+      .row.justify-content-center.mb-5
         .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Imagenes2.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Imagenes2.txt')" target="_blank" type="application/pdf")
             span Ver código fuente 
 
 
@@ -368,9 +368,9 @@
         .video
           iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         figcaption Video: Leyenda del video
-      .row.justify-content-center.mb-4.me-3
+      .row.justify-content-center.mb-4
         .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Video.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Video.txt')" target="_blank" type="application/pdf")
             span Ver código fuente                
 
 
@@ -403,9 +403,9 @@
               td Celda 2
               td Celda 3
               td Celda 4
-      .row.justify-content-center.mb-5.me-3
+      .row.justify-content-center.mb-5
         .col-auto
-          a.boton.color-botones.b--rad(:href="obtenerLink('/downloads/t1/Tabla1.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones(:href="obtenerLink('/downloads/t1/Tabla1.txt')" target="_blank" type="application/pdf")
             span Ver código fuente
 
       hr.my-5
@@ -430,9 +430,9 @@
           tr
             th Formal
             td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
-      .row.justify-content-center.mb-5.me-3
+      .row.justify-content-center.mb-5
         .col-auto
-          a.boton.color-botones.b--rad(:href="obtenerLink('/downloads/t1/Tabla2.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones(:href="obtenerLink('/downloads/t1/Tabla2.txt')" target="_blank" type="application/pdf")
             span Ver código fuente 
 
       hr.my-5
@@ -484,9 +484,9 @@
               span.text-small Textos pequeños
             td
               .h6 FDSD33          
-      .row.justify-content-center.mb-5.me-3
+      .row.justify-content-center.mb-5
         .col-auto
-          a.boton.color-botones.texto-blanco.b--rad(:href="obtenerLink('/downloads/t1/Tabla3.txt')" target="_blank" type="application/pdf")
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Tabla3.txt')" target="_blank" type="application/pdf")
             span Ver código fuente 
 
 
@@ -590,7 +590,7 @@
         h2 1.10 Botones
 
       .mb-3
-        a.boton.me-3.indicador__container(
+        a.boton.indicador__container(
           :href="obtenerLink('/downloads/prueba.pdf')"
           target="_blank"
           type="application/pdf"
@@ -599,29 +599,29 @@
           i.fas.fa-file-download
           .indicador--click(v-if="mostrarIndicador")
       .mb-3
-        a.boton.color-primario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton.color-primario.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton.color-secundario.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton.color-secundario.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton.color-acento-contenido.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton.color-acento-contenido.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton.color-acento-botones.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
       div.mb-4
-        a.boton--sm.color-primario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton--sm.color-primario.texto-blanco.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton--sm.color-secundario.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton--sm.color-secundario.texto-blanco.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton--sm.color-acento-contenido.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton--sm.color-acento-contenido.texto-blanco.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
-        a.boton--sm.color-acento-botones.texto-blanco.me-3(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+        a.boton--sm.color-acento-botones.texto-blanco.me-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
           span Descargar
           i.fas.fa-file-download
 
