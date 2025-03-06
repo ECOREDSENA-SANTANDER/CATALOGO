@@ -14,7 +14,7 @@
             .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
 
       .col-sm-6.col-xl-3.mb-4.mb-xl-0
-        .tarjeta.tarjeta-slide.abajo.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+        .tarjeta.tarjeta-slide.abajo.color-secundario
           .tarjeta-slide__contenedor
             .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
             .tarjeta-slide__contenido.p-4.p-xl-5
@@ -22,7 +22,7 @@
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
 
       .col-sm-6.col-xl-3.mb-4.mb-sm-0
-        .tarjeta.tarjeta-slide.derecha.color-acento-contenido(@mouseover="indicadorTarjetaSlide = false")
+        .tarjeta.tarjeta-slide.derecha.color-acento-contenido
           .tarjeta-slide__contenedor
             .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
             .tarjeta-slide__contenido.p-4.p-xl-5
@@ -42,7 +42,9 @@
 <script>
 export default {
   components: {},
-  data: () => ({}),
+  data: () => ({
+    indicadorTarjetaSlide: true,
+  }),
   mounted() {
     this.$nextTick(() => {
       this.$aosRefresh()

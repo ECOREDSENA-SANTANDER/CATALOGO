@@ -139,7 +139,29 @@
           span Ver código fuente
 
 
+    hr.my-5
 
+    .titulo-segundo.color-acento-contenido
+      h2 Pestañas o Tabs
+
+    p Icono inactivo en escala de grises
+
+    TabsB.color-primario.escala-grises.mb-4
+      .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row.justify-content-center
+          .col-md-11
+            h4 Celebrate your failures 1
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .py-4.py-md-5(titulo="Don’t lie to yourself" :icono="require('@/assets/componentes/ej-04.svg')")
+        .row.justify-content-center
+          .col-md-11          
+            h4 Celebrate your failures 2
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tab1.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente  
 
 
     hr.my-5

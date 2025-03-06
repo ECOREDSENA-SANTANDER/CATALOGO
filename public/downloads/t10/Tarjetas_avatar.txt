@@ -11,7 +11,7 @@
               figure
                 img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+          p.text-small.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
       .col-sm-6.col-lg-3.mb-4.mb-lg-0
         .tarjeta--boton.color-secundario.p-4
@@ -20,7 +20,7 @@
               figure
                 img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+          p.text-small.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
       .col-sm-6.col-lg-3.mb-4.mb-sm-0
         .tarjeta--boton.color-acento-contenido.text-white--hover.p-4
@@ -29,7 +29,7 @@
               figure
                 img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+          p.text-small.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
       .col-sm-6.col-lg-3
         .tarjeta--boton.color-acento-botones.p-4
@@ -38,7 +38,7 @@
               figure
                 img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
           h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+          p.text-small.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
 
 </template>
 

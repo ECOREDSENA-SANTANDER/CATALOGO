@@ -51,6 +51,7 @@
       #t_10_1.titulo-segundo.color-acento-contenido
         h2 10.1 Tarjetas - avatar
   
+      h3.titulo-tercero Tipo 1
       .row.mb-4
         .col-sm-6.col-lg-3.mb-4.mb-lg-0
           .tarjeta--boton.color-primario.p-4
@@ -59,7 +60,7 @@
                 figure
                   img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')
             h3.text-center Intuition important
-            p.text-center Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
+            p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
         .col-sm-6.col-lg-3.mb-4.mb-lg-0
           .tarjeta--boton.color-secundario.p-4
             .row.justify-content-center.mb-3
@@ -67,7 +68,7 @@
                 figure
                   img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')  
             h3.text-center Intuition important
-            p.text-center Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
+            p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
         .col-sm-6.col-lg-3.mb-4.mb-sm-0
           .tarjeta--boton.color-acento-contenido.text-white--hover.p-4
             .row.justify-content-center.mb-3
@@ -75,7 +76,7 @@
                 figure
                   img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')  
             h3.text-center Intuition important
-            p.text-center Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
+            p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.  
         .col-sm-6.col-lg-3
           .tarjeta--boton.color-acento-botones.p-4
             .row.justify-content-center.mb-3
@@ -83,13 +84,77 @@
                 figure
                   img(src='@/assets/componentes/ej-05.svg', alt='Texto que describa la imagen')  
             h3.text-center Intuition important
-            p.text-center Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+            p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
       
       .row.justify-content-center.mb-5
         .col-auto
           a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar.txt')" target="_blank" type="application/pdf")
             span Ver código fuente
       
+
+      hr.my-5
+
+      h3.titulo-tercero Tipo 2
+      .row
+        .col-lg-6
+          .tarjeta-avatar-b.mb-4
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            .tarjeta.tarjeta--azul
+              .p-4
+                h4 John Doe
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+        .col-lg-6
+          .tarjeta-avatar-b.mb-4
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt='AvatarTop')
+            .tarjeta.color-acento-botones
+              .p-4
+                h4 John Doe
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente
+
+
+      hr.my-5
+
+
+      h3.titulo-tercero Tipo 3
+
+      .row.mb-4
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-primario
+              .p-4
+                h4.text-center John Doe
+                p.mb-0 moment. K askdnaskjda sjkdn akjsndasd ajshd akjshd kajshd ask djhak sjdha ksjdha kjsdha kjsdha kjsdh akjshda kjshd aksjdh kajsd djkhakjshdka jsak Abandon the shelter of insecurity.
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            .tarjeta.color-acento-botones
+              .p-4
+                h4.text-center John Doe
+                p.mb-0 moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt='')
+            .tarjeta.color-acento-contenido
+              .p-4.text-white
+                h4.text-center Greatness isn’t the height
+                p.mb-0 moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar3.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente
+
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -231,6 +296,7 @@
       #t_10_3.titulo-segundo.color-acento-contenido
         h2 10.3 Tarjetas - animadas
   
+      h3.titulo-tercero Tipo 1 - Tarjetas slide
       .row.mb-4
         .col-sm-6.col-xl-3.mb-4.mb-xl-0
           .tarjeta.tarjeta-slide.arriba.color-primario(@mouseover="indicadorTarjetaSlide = false")
@@ -267,6 +333,46 @@
           a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_animadas.txt')" target="_blank" type="application/pdf")
             span Ver código fuente
       
+
+      hr.my-5
+
+      h3.titulo-tercero Tipo 1 - Tarjetas flip
+      .row.mb-4
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-flip.color-primario
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4
+                h4 John Doe
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-flip.color-secundario(@mouseover="indicadorTarjetaFlip = false")
+            .indicador--hover(v-if="indicadorTarjetaFlip")
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4
+                h4 John Doe
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+        .col-sm-6.col-xl-3.mb-4.mb-sm-0
+          .tarjeta.tarjeta-flip.color-acento-contenido
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4
+                h4 John Doe
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+        .col-sm-6.col-xl-3
+          .tarjeta.tarjeta-flip.color-acento-botones
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tarjetas/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4
+                h4 John Doe
+                p.mb-0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+      .row.justify-content-center.mb-5
+        .col-auto
+          a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_animadas2.txt')" target="_blank" type="application/pdf")
+            span Ver código fuente
+
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
           TabsA.color-acento-botones
@@ -345,6 +451,8 @@ export default {
   name: 'Tema10',
   data: () => ({
     // variables de vue
+    indicadorTarjetaSlide: true,
+    indicadorTarjetaFlip: true,
   }),
   mounted() {
     this.$nextTick(() => {
