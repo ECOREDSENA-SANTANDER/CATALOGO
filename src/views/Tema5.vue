@@ -176,14 +176,46 @@
                     .anexo__texto
                       p Formato instruccional - muestra
 
+    Separador
 
+    .titulo-segundo.color-acento-contenido
+      h2 Slyder B: Estructura del componente
+
+    .bg--gradientBlue.p-5
+      SlyderB(:datos="datosSlyder")
+    .row.justify-content-end.mb-5.me-3
+      .col-auto
+        a.boton.color-acento-contenido.texto-blanco.b--rad(:href="obtenerLink('/downloads/Slide_imagenes.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
 </template>
 
 <script>
+import SlyderB from '../components/SlyderB.vue'
+
 export default {
   name: 'Tema5',
+  components: {
+    SlyderB,
+  },
   data: () => ({
-    // variables de vue
+    datosSlyder: [
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+      {
+        titulo:
+          'Never, never assume that what you have achieved is good enough',
+        texto:
+          'Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original.',
+        imagen: require('@/assets/template/img-placeholder.svg'),
+        // leyendaImagen: 'Leyenda de la imagen',
+      },
+    ],
   }),
   mounted() {
     this.$nextTick(() => {

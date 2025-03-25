@@ -177,14 +177,12 @@
 <script>
 import LineaTiempoA from '../components/LineaTiempoA.vue'
 import LineaTiempoB from '../components/LineaTiempoB.vue'
-import LineaTiempoD from '../components/LineaTiempoD.vue'
 
 export default {
   name: 'Tema8',
   components: {
     LineaTiempoA,
     LineaTiempoB,
-    LineaTiempoD,
   },
   data: () => ({
     // variables de vue
