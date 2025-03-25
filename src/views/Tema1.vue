@@ -672,8 +672,12 @@
   </template>
 
 <script>
+import ModalA from '../components/ModalA.vue'
 export default {
   name: 'Tema1',
+  components: {
+    ModalA,
+  },
   data: () => ({
     mostrarIndicador: true,
     modal1: false,

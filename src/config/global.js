@@ -289,6 +289,12 @@ export default {
         titulo: 'Nuevos componentes',
         desarrolloContenidos: true,
       },
+      {
+        nombreRuta: 'tema14',
+        numero: '14',
+        titulo: 'Dialogos',
+        desarrolloContenidos: true,
+      },
     ],
     subMenu: [
       {
