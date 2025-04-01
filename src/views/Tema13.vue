@@ -203,6 +203,18 @@
         a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Img1.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
+    .row.mb-5
+      .col-lg-12.order-2.order-lg-1
+        TabsA.color-acento-botones
+          .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
+            ul.lista-ul.mb-4
+              li
+                i.fas.fa-angle-right.txt--green
+                | No se usa ningún titulo.
+              li
+                i.fas.fa-angle-right.txt--green
+                | Texto corto de máximo 10 palabras.
+
 </template>
 
 <script>
