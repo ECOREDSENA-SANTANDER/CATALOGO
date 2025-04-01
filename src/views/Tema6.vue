@@ -51,7 +51,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada opción del acordeón debe ir acompañada de un texto de máximo 60 palabras y puede ir acompañado de una  foto o ilustración.
-                .tarjeta.color-primario.p-3.mb-4
+                //.tarjeta.color-primario.p-3.mb-4
                   .row.justify-content-around.align-items-center
                     .col-auto
                       img(src="@/assets/template/document.svg").img65
@@ -64,7 +64,7 @@
                           a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
                             span Descargar
                             i.fas.fa-file-download
-                .row.justify-content-start
+                //.row.justify-content-start
                   .col-auto
                     a.anexo.bg2(href="https://drive.google.com/file/d/1I97nKjGfN-HwuZghYmccPQeg0b8OEP1m/view?usp=sharing" target="_blank")
                       .anexo__icono
@@ -108,7 +108,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada opción del acordeón debe ir acompañada de un texto de máximo 60 palabras y puede ir acompañado de una  foto o ilustración.
-                .tarjeta.color-primario.p-3.mb-4
+                //.tarjeta.color-primario.p-3.mb-4
                   .row.justify-content-around.align-items-center
                     .col-auto
                       img(src="@/assets/template/document.svg").img65
@@ -121,7 +121,7 @@
                           a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
                             span Descargar
                             i.fas.fa-file-download
-                .row.justify-content-start
+                //.row.justify-content-start
                   .col-auto
                     a.anexo.bg2(href="https://drive.google.com/file/d/1o4D8dNAl1gVLifWAbT7ut53ALsdZ7iVN/view?usp=sharing" target="_blank")
                       .anexo__icono
@@ -178,7 +178,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada opción del acordeón debe ir acompañada de un texto de máximo 45 palabras y puede ir acompañado de una  foto o ilustración.
-                .tarjeta.color-primario.p-3.mb-4
+                //.tarjeta.color-primario.p-3.mb-4
                   .row.justify-content-around.align-items-center
                     .col-auto
                       img(src="@/assets/template/document.svg").img65
@@ -191,7 +191,7 @@
                           a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1ojd75qS-nmacZ1P0AaHxt-56VS9Gezhbf_V-sVsJuH4/edit?usp=sharing" target="_blank")
                             span Descargar
                             i.fas.fa-file-download
-                .row.justify-content-start
+                //.row.justify-content-start
                   .col-auto
                     a.anexo.bg2(href="https://drive.google.com/file/d/1-45Y5mcNP0l5NFfMO8_wL-BWzpUylpZO/view?usp=sharing" target="_blank")
                       .anexo__icono

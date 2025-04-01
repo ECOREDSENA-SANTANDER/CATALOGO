@@ -166,7 +166,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada tarjeta debe ir acompañada de un texto corto de máximo 40 palabras que acompañe a una foto o ilustración.  
-              .tarjeta.color-primario.p-3.mb-4
+              //.tarjeta.color-primario.p-3.mb-4
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -179,7 +179,7 @@
                         a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1jVBfOd5V9GKLcxlabgO5ugooc6IHyGn5-JTTdtEkPMo/edit?usp=sharing" target="_blank")
                           span Descargar
                           i.fas.fa-file-download
-              .row.justify-content-start
+              //.row.justify-content-start
                 .col-auto
                   a.anexo.bg2(href="https://drive.google.com/file/d/14Bc2_tyVPj_FVjj7vMUuQ7sBVbImYEzn/view?usp=sharing" target="_blank")
                     .anexo__icono
@@ -270,7 +270,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada tarjeta debe ir acompañada de un texto corto de máximo 40 palabras que acompañe a una foto o ilustración.
-              .tarjeta.color-primario.p-3.mb-4
+              //.tarjeta.color-primario.p-3.mb-4
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -283,7 +283,7 @@
                         a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1jVBfOd5V9GKLcxlabgO5ugooc6IHyGn5-JTTdtEkPMo/edit?usp=sharing" target="_blank")
                           span Descargar
                           i.fas.fa-file-download
-              .row.justify-content-start
+              //.row.justify-content-start
                 .col-auto
                   a.anexo.bg2(href="https://drive.google.com/file/d/1NRjGKQKvyL9QIlRd3EYYCVFQISBsuK4v/view?usp=sharing" target="_blank")
                     .anexo__icono
@@ -384,7 +384,7 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Cada tarjeta debe ir acompañada de un texto corto de máximo 40 palabras que acompañe a una foto o ilustración.
-              .tarjeta.color-primario.p-3.mb-4
+              //.tarjeta.color-primario.p-3.mb-4
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -397,7 +397,7 @@
                         a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1jVBfOd5V9GKLcxlabgO5ugooc6IHyGn5-JTTdtEkPMo/edit?usp=sharing" target="_blank")
                           span Descargar
                           i.fas.fa-file-download        
-              .row.justify-content-start
+              //.row.justify-content-start
                 .col-auto
                   a.anexo.bg2(href="https://drive.google.com/file/d/1fndILIRLCGkpf9cuuE8Ah5DB5F_iJwhX/view?usp=sharing" target="_blank")
                     .anexo__icono

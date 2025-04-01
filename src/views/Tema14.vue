@@ -4,13 +4,13 @@
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
-        span 15
+        span 14
       h1 Dialogos
     
-    #t_5_4.titulo-segundo.color-acento-contenido
+    #t_14_4.titulo-segundo.color-acento-contenido
       h2  Diálogos (Relación de términos en un diálogo)
 
-    #t_5_4
+    #t_14_4
     Dialogo.color-primario(:dialogo="dialogo")
       template(#nombre-actividad) Arrastrar y Soltar
       template(#titulo-actividad) Greeting the doctor. / Saludando al doctor.
@@ -21,7 +21,7 @@
           span Ver código fuente
 
 
-    .row.justify-content-center.align-items-center.mb-5
+    //.row.justify-content-center.align-items-center.mb-5
       .col-lg-8
         .tarjeta.color-primario.p-3
           .row.justify-content-around.align-items-center

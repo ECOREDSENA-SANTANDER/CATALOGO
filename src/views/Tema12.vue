@@ -46,49 +46,39 @@
       TabsA.color-acento-botones.mb-5
   
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 1")
-          figure.mb-5
+          figure
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/3KDDv2LrIcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-          .row.justify-content-center
+          //.row.justify-content-center
             .col-auto
               a.anexo.bg2(href="https://drive.google.com/file/d/1ZjgDpRtYsL0Y1u5FDbtFo8DDGCtTqJx2/view?usp=sharing" target="_blank")
                 .anexo__icono
                   img(src="@/assets/template/icono-ppt.svg")
                 .anexo__texto
-                  p Formato instruccional - muestra
-  
+                  p Formato instruccional - muestra  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 2")
-          figure.mb-4
+          figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/-rq4_7xgFLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-          .row.justify-content-center
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/-rq4_7xgFLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
+          //.row.justify-content-center
             .col-auto
               a.anexo.bg2(href="https://drive.google.com/file/d/1yvBvIqJxHCSq8734FBVdl52nBYoTDBjh/view?usp=sharing" target="_blank")
                 .anexo__icono
                   img(src="@/assets/template/icono-ppt.svg")
                 .anexo__texto
-                  p Formato instruccional - muestra
-  
-  
+                  p Formato instruccional - muestra  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 3")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/cCxnzKy-hLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/cCxnzKy-hLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 4")
           figure
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/8gZTBdLt_IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 5")
           figure
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/MbPhrvkKgH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-  
   
       .row
         .col-lg-12.order-2.order-lg-1
@@ -109,12 +99,9 @@
                   | El texto debe estar de forma editable no en imagen, de manera que se pueda copiar y pegar.
                 li
                   i.fas.fa-angle-right.txt--green
-                  | Si el guion trae tablas no deben ser complejas ni muy largas, dada la naturaleza del recurso.
-  
-  
-              p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
-  
-              .tarjeta.color-primario.p-3
+                  | Si el guion trae tablas no deben ser complejas ni muy largas, dada la naturaleza del recurso.  
+              //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
+              //.tarjeta.color-primario.p-3
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -136,38 +123,32 @@
   
       TabsA.color-acento-botones.mb-5
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 1")
-          figure.mb-4
+          figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/vdPrCjWJSHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-          .row.justify-content-center
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/vdPrCjWJSHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
+          //.row.justify-content-center
             .col-auto
               a.anexo.bg2(href="https://drive.google.com/file/d/1qVoTkE9LBlNxjuc62QfbtPXJBewyHww1/view?usp=sharing" target="_blank")
                 .anexo__icono
                   img(src="@/assets/template/icono-ppt.svg")
                 .anexo__texto
-                  p Formato instruccional - muestra
-  
+                  p Formato instruccional - muestra  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 2")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/8EuGaDjVbjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/8EuGaDjVbjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 3")
           figure
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/Z9zSnDD46IU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 4")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/-G8D2UP9ZiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/-G8D2UP9ZiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 5")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/GXTHrucLiac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/GXTHrucLiac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
   
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
@@ -191,16 +172,12 @@
                   | El material de apoyo deberá ser entregado al equipo de Diseño y Desarrollo RED.
                 li
                   i.fas.fa-angle-right.txt--green
-                  | Los videos deben ser entregados sin edición alguna, es decir, sin agregar textos, música de fondo, animaciones, etc.
-  
+                  | Los videos deben ser entregados sin edición alguna, es decir, sin agregar textos, música de fondo, animaciones, etc.  
                 li
                   i.fas.fa-angle-right.txt--green
                   | Calidad de video: FHD - 1920*1080. Software recomendado OBS Studio.
-  
-  
-              p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
-  
-              .tarjeta.color-primario.p-3
+              //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
+              //.tarjeta.color-primario.p-3
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -222,23 +199,19 @@
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 1")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/1p9t9ymdH6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/1p9t9ymdH6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 2")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/mgvJvJ_OO2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/mgvJvJ_OO2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
         .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 3")
           figure
             .video
-              iframe(width="560" height="315" src="https://www.youtube.com/embed/j_4Cm4ZZWQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-        .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 5")
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/j_4Cm4ZZWQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
+        .tarjeta.color-acento-botones--borde.p-4(titulo="Ejemplo - 4")
           figure
             .video
               iframe(width="560" height="315" src="https://www.youtube.com/embed/xkfoHMVK2Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
   
       .row.mb-5
         .col-lg-12.order-2.order-lg-1
@@ -267,11 +240,8 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Calidad de video: FHD - 1920*1080. Software recomendado OBS Studio.
-  
-  
-              p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
-  
-              .tarjeta.color-primario.p-3
+              //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.  
+              //.tarjeta.color-primario.p-3
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -292,11 +262,10 @@
       .row.justify-content-center
         .col-lg-11
           .crd.crd--border.p-4
-            figure.mb-4
+            figure
               .video
-                iframe(width="560" height="315" src="https://www.youtube.com/embed/jASywqOHrQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  
-            .row.justify-content-center
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/jASywqOHrQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)  
+            //.row.justify-content-center
               .col-auto
                 a.anexo.bg2(href="https://drive.google.com/file/d/18NDMLf3aUXkkCdZUb6aJbYFvyTIA5bOn/view?usp=sharing" target="_blank")
                   .anexo__icono
@@ -320,10 +289,8 @@
                 li
                   i.fas.fa-angle-right.txt--green
                   | Señalar términos o palabras destacadas en negrilla para resaltarlas en pantalla.
-  
-              p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
-  
-              .tarjeta.color-primario.p-3
+              //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del video.
+              //.tarjeta.color-primario.p-3
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65

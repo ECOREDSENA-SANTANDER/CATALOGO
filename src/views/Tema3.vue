@@ -67,8 +67,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | #[strong Puntos calientes]: título y texto que se despliega en cada punto interactivo. #[strong (MÁXIMO 10 PUNTOS INTERACTIVOS)]
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
-            .tarjeta.color-primario.p-3
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
+            //.tarjeta.color-primario.p-3
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -81,7 +81,7 @@
                       a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1uZnIzJU0_WorBlLCKfkwbKVmgS8uBeTVv_Y0sG647Fs/edit?usp=sharing" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
-            .row.justify-content-start.mt-4
+            //.row.justify-content-start.mt-4
               .col-auto
                 a.anexo.bg2(href="https://drive.google.com/file/d/1rk5d28KabWs8h4GMSPJWhBcTuobXmjJS/view?usp=sharing" target="_blank")
                   .anexo__icono
@@ -132,8 +132,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | #[strong Puntos modales]: título y texto que se despliega en cada punto interactivo. #[strong (MÁXIMO 12 PUNTOS MODALES)]
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
-            .tarjeta.color-primario.p-3
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
+            //.tarjeta.color-primario.p-3
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -146,7 +146,7 @@
                       a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1i-E9Iudyt63eEl8Iv5tQnbMPFjopdz-wrhnk4S0p4yQ/edit?usp=sharing" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
-            .row.justify-content-start.mt-4
+            //.row.justify-content-start.mt-4
               .col-auto
                 a.anexo.bg2(href="https://drive.google.com/file/d/1l5xILu9ounwutyxi5CSTytllgiWheuyX/view?usp=sharing" target="_blank")
                   .anexo__icono

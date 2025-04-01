@@ -155,7 +155,7 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | Se permiten máximo 8 tarjetas por carrusel.
-              .tarjeta.color-primario.p-3.mb-4
+              //.tarjeta.color-primario.p-3.mb-4
                 .row.justify-content-around.align-items-center
                   .col-auto
                     img(src="@/assets/template/document.svg").img65
@@ -168,7 +168,7 @@
                         a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1ZFdoE-NxFw3EIySmILAbcmbYtXGP7Z11b9W0_ODm35c/edit?usp=sharing" target="_blank")
                           span Descargar
                           i.fas.fa-file-download
-              .row.justify-content-start
+              //.row.justify-content-start
                 .col-auto
                   a.anexo.bg2(href="https://drive.google.com/file/d/1yrQu2LwW0mu4Ae2J61-E8JV5gZ_rg_dB/view?usp=sharing" target="_blank")
                     .anexo__icono

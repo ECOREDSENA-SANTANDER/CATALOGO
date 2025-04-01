@@ -34,10 +34,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | Incluir cualquier observación o solicitud específica frente al diseño gráfico de la infografía.
-
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
-
-            .tarjeta.color-primario.p-3
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción de la infografía.
+            //.tarjeta.color-primario.p-3
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -92,7 +90,7 @@
       .col-11
         img(src="@/assets/curso/temas/infografia/infografia_02.png")
 
-    .row.justify-content-center.mb-5
+    //.row.justify-content-center.mb-5
       .col-auto
         a.anexo(href="https://drive.google.com/file/d/1eXU5VbhNu8QbPrB-FyskQ_X8tAIbkuHR/view" target="_blank")
           .anexo__icono
@@ -123,7 +121,7 @@
           span Ver código fuente
 
 
-    .row.justify-content-center.mb-5
+    //.row.justify-content-center.mb-5
       .col-auto
         a.anexo(href="https://drive.google.com/file/d/1-3pXt71H1Wb1qrak2PXb7MvU5ZaYW2VK/view" target="_blank")
           .anexo__icono

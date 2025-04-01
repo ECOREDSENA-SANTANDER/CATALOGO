@@ -15,7 +15,7 @@
           .crd.bg1.p-4.mb-4
             p.mb-0 Archivo en formato MP3 que se puede combinar con otros componentes interactivos para reforzar la explicación de un tema o concepto. Por ejemplo, se puede utilizar en conjunto con un slider de diapositivas para dar lugar a un sonoviso.  
   
-          .tarjeta.color-primario.p-3
+          //.tarjeta.color-primario.p-3
             .row.justify-content-around.align-items-center
               .col-auto
                 img(src="@/assets/template/document.svg").img65

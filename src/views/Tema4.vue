@@ -123,8 +123,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | Por cada diapositiva debe ir un texto de máximo 80 palabras.
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
-            .tarjeta.color-primario.p-3.mb-4
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
+            //.tarjeta.color-primario.p-3.mb-4
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -137,7 +137,7 @@
                       a.boton.color-acento-botones(href="https://docs.google.com/document/d/1rW0rAr-l4yHGMhfiDchdQOh66LqaMxK9wKRWxwVIvv8/edit?usp=sharing" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
-            .row.justify-content-start
+            //.row.justify-content-start
               .col-auto
                 a.anexo.bg2(href="https://drive.google.com/file/d/1SphPoasXbUQjw9fD5I3fgugAeEQWRScZ/view?usp=sharing" target="_blank")
                   .anexo__icono
@@ -189,8 +189,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | Por cada diapositiva debe ir un texto de máximo 80 palabras.
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
-            .tarjeta.color-primario.p-3
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
+            //.tarjeta.color-primario.p-3
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -276,8 +276,8 @@
               li
                 i.fas.fa-angle-right.txt--green
                 | Se debe incluir un título en la navegación de la diapositiva de máximo 3 palabras.
-            p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
-            .tarjeta.color-primario.p-3.mb-4
+            //p.mb-4 A continuación se presenta el formato instruccional el cual cuenta con las especificaciones necesarias para la producción del slide de diapositivas
+            //.tarjeta.color-primario.p-3.mb-4
               .row.justify-content-around.align-items-center
                 .col-auto
                   img(src="@/assets/template/document.svg").img65
@@ -290,7 +290,7 @@
                       a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1g6fMSTR-6mclIg_S-JgSTZyWKD894kKfSDSaNY63G7c/edit?usp=sharing" target="_blank")
                         span Descargar
                         i.fas.fa-file-download
-            .row.justify-content-start
+            //.row.justify-content-start
               .col-auto
                 a.anexo.bg2(href="https://drive.google.com/file/d/1oFq1y5Qyzo-C9TucftYqYORPB3ogW5Dy/view?usp=sharing" target="_blank")
                   .anexo__icono

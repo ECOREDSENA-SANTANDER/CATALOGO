@@ -107,6 +107,20 @@
         a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj3.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
+    .row.mb-5
+      .col-lg-12.order-2.order-lg-1
+        TabsA.color-acento-botones
+          .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
+            ul.lista-ul.mb-4
+              li
+                i.fas.fa-angle-right.txt--green
+                | Usar imagen que acompañe la información escrita.
+              li
+                i.fas.fa-angle-right.txt--green
+                | Titulo corto de máximo 8 palabras
+              li
+                i.fas.fa-angle-right.txt--green
+                | Colocar una breve descripción del tema que se aborda. (Párrafo corto máximo 30 palabras aprox)
 
     hr.my-5
 
