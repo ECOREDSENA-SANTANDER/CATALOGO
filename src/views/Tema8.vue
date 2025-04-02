@@ -175,87 +175,11 @@
   </template>
 
 <script>
-import LineaTiempoA from '../components/LineaTiempoA.vue'
-import LineaTiempoB from '../components/LineaTiempoB.vue'
-
 export default {
   name: 'Tema8',
-  components: {
-    LineaTiempoA,
-    LineaTiempoB,
-  },
+  components: {},
   data: () => ({
     // variables de vue
-    datosLineaTiempoA: [
-      {
-        ano: '100.000 - 10.000 A.C.',
-        titulo: 'Período Paleolítico',
-        texto: 'Pieles, pelo de animales, hojas, huesos y conchas.',
-      },
-      {
-        ano: '10.000 - 5.000 A.C.',
-        titulo: 'Periodo Mesolítico',
-        texto:
-          'Broches hechos con hueso, abrigos, gorros, botas y zapatillas de cuero.',
-      },
-      {
-        ano: '10.000 - 5.000 A.C.',
-        titulo: 'Periodo Neolítico',
-        texto: 'Vestimenta de fibras animales y vegetales, pulseras de marfil.',
-      },
-    ],
-    datosLineaTiempoB: [
-      {
-        titulo: '01 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '02 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '03 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '04 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-    ],
-    datosLineaTiempoD: [
-      {
-        titulo: '01 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '02 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '03 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-      {
-        titulo: '04 de marzo',
-        texto:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus augue, pulvinar ac auctor at, pellentesque id diam. Praesent maximus, felis sollicitudin pharetra vestibulum, turpis tortor tincidunt augue, in efficitur urna diam eleifend magna.',
-        icono: require('@/assets/componentes/ej-05.svg'),
-      },
-    ],
   }),
   mounted() {
     this.$nextTick(() => {

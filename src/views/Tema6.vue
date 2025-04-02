@@ -202,12 +202,9 @@
   </template>
 
 <script>
-import LineaTiempoD from '../components/LineaTiempoD.vue'
 export default {
   name: 'Tema6',
-  components: {
-    LineaTiempoD,
-  },
+  components: {},
   data: () => ({
     // variables de vue
   }),

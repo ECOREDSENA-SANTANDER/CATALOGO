@@ -52,7 +52,7 @@
         h2 10.1 Tarjetas - avatar
   
       h3.titulo-tercero Tipo 1
-      .row.mb-4
+      .row.no-pointer.mb-4
         .col-sm-6.col-lg-3.mb-4.mb-lg-0
           .tarjeta--boton.color-primario.p-4
             .row.justify-content-center.mb-3
@@ -87,7 +87,8 @@
             p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
       
       .row.justify-content-center.mb-5
-        .col-auto
+        p.text-center #[em Nota: Revisar los estilos para quitar el cursor pointer] 
+        .col-auto          
           a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar.txt')" target="_blank" type="application/pdf")
             span Ver código fuente
       

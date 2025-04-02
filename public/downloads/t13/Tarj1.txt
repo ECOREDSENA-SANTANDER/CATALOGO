@@ -3,9 +3,10 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
 
-    .row.justify-content-center.mb-5
+    .row.justify-content-center.cursor-pointer.mb-5
       .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
-        .crd_hover_txt
+        .crd_hover_txt(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
           .crd_hover_txt--img
             figure
               img(src="@/assets/curso/temas/ejm.png", alt="")
@@ -36,6 +37,7 @@
 export default {
   components: {},
   data: () => ({
+    mostrarIndicador: true,
   }),
   mounted() {
     this.$nextTick(() => {
@@ -49,6 +51,8 @@ export default {
 </script>
 
 <style lang="sass">
+.cursor-pointer.crd_hover_txt
+  cursor: pointer
 .crd_hover_txt
   position: relative  
   padding: 0 !important

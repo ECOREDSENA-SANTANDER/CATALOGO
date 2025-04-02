@@ -10,9 +10,10 @@
     .titulo-segundo.color-acento-contenido
       h2 Tarjetas
 
-    .row.justify-content-center.mb-4
+    .row.justify-content-center.cursor-pointer.mb-4
       .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
-        .crd_hover_txt
+        .crd_hover_txt(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
           .crd_hover_txt--img
             figure
               img(src="@/assets/curso/temas/ejm.png", alt="")
@@ -45,7 +46,7 @@
     hr.my-5
 
 
-    .row.mb-4.mb-md-4
+    .row.cursor-pointer.mb-4.mb-md-4
       .col-lg-4.col-md-6.mb-3.mb-md-3
         .tarjeta.tarjeta-foto-hover
           .tarjeta-foto-hover__img: img(src='@/assets/curso/temas/ejm.png')
@@ -56,8 +57,8 @@
               h5 Bloqueos mentales
               p.mb-0  Son los que están relacionados con esos pensamientos ya construidos y que bloquean toda idea nueva, para los cuales se pueden tener pensamientos divergentes, rompiendo rutinas y reconfigurando ideas y procesos para avanzar.
       .col-lg-4.col-md-6.mb-3.mb-md-3
-        .tarjeta.tarjeta-foto-hover(@mouseover="mostrarIndicador = false")
-          .indicador--hover(v-if="mostrarIndicador")
+        .tarjeta.tarjeta-foto-hover(@mouseover="mostrarIndicador2 = false")
+          .indicador--hover(v-if="mostrarIndicador2")
           .tarjeta-foto-hover__img: img(src='@/assets/curso/temas/ejm.png')
           .tarjeta-foto-hover__titulo.d-flex.justify-content-center.align-items-center.p-2
             h4.text-center.text-white.mb-0 Bloqueos emocionales
@@ -83,7 +84,7 @@
 
     hr.my-5
 
-    .row.justify-content-center
+    .row.justify-content-center.cursor-pointer
       .col-md-5.col-6.mb-4
         .nav-holder.align-items-center.px-0
           figure
@@ -93,8 +94,8 @@
               .h5.mt-4.mt-lg-0.mb-2 La luz natural
               p Producida por los rayos de sol.
       .col-md-5.col-6.mb-4
-        .nav-holder.align-items-center.px-0(@mouseover="mostrarIndicador2 = false")
-          .indicador--hover(v-if="mostrarIndicador2")
+        .nav-holder.align-items-center.px-0(@mouseover="mostrarIndicador3 = false")
+          .indicador--hover(v-if="mostrarIndicador3")
           figure
             img(src="@/assets/curso/temas/ejm.png", alt="")
           .text.p-lg-2.p-3
@@ -124,23 +125,24 @@
 
     hr.my-5
 
-    .row.justify-content-center(data-aos="fade-down")
+    .row.justify-content-center.cursor-pointer
       .col-lg-5.col-md-6.mb-3.mb-md-0
-        .content  
+        .content-card4(@mouseover="mostrarIndicador4 = false")
+          .indicador--hover(v-if="mostrarIndicador4")
           .content-overlay
           .btn-numero.btn-bottom-right
             h3 A
-          img(src="@/assets/curso/temas/ejm.png", alt="Fortalezas") 
+          img(src="@/assets/curso/temas/ejm.png", alt="") 
           .tarjeta-details.fadeIn-top.p-1
             h3 Titulo
             p Constituyen sus mejores y principales elementos, que les permite cumplir con sus objetivos.
             p Ejemplos: cuáles son mis ventajas, qué hacemos bien.
       .col-lg-5.col-md-6.mb-3.mb-md-0
-        .content  
+        .content-card4
           .content-overlay
           .btn-numero.btn-bottom-left
             h3 B
-          img(src="@/assets/curso/temas/ejm.png", alt="Fortalezas") 
+          img(src="@/assets/curso/temas/ejm.png", alt="") 
           .tarjeta-details.fadeIn-top.p-1
             h3.text-right Titulo
             p Son los aspectos negativos de la organización-proyecto que, si no se superan, podrán afectar el desarrollo del mismo.
@@ -224,6 +226,8 @@ export default {
     // variables de vue
     mostrarIndicador: true,
     mostrarIndicador2: true,
+    mostrarIndicador3: true,
+    mostrarIndicador4: true,
   }),
   mounted() {
     this.$nextTick(() => {
