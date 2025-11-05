@@ -7,8 +7,8 @@
         span 13
       h1 Nuevos componentes
 
-    .titulo-segundo.color-acento-contenido
-      h2 Tarjetas
+    #t_13_1.titulo-segundo.color-acento-contenido
+      h2 13.1 Tarjetas
 
     .row.justify-content-center.cursor-pointer.mb-4
       .col-xl-4.col-lg-7.col-md-9.col-11.mb-4.mb-xl-0
@@ -111,8 +111,8 @@
     .row.mb-5
       .col-lg-12.order-2.order-lg-1
         TabsA.color-acento-botones
-          .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
-            ul.lista-ul.mb-4
+          .tarjeta.clr--gris.p-4.pb-3(titulo="Requerimientos de información")
+            ul.lista-ul.mb-0
               li
                 i.fas.fa-angle-right.txt--green
                 | Usar imagen que acompañe la información escrita.
@@ -148,19 +148,62 @@
             p Son los aspectos negativos de la organización-proyecto que, si no se superan, podrán afectar el desarrollo del mismo.
             p Ejemplos: qué podría ser mejorado, qué se está haciendo mal, qué podría ser evitado. 
     
-
     .row.justify-content-center.mb-5
       .col-auto
         a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj4.txt')" target="_blank" type="application/pdf")
           span Ver código fuente
 
-
     hr.my-5
 
-    .titulo-segundo.color-acento-contenido
-      h2 Pestañas o Tabs
+    .row.justify-content-center.mb-4
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center(@mouseover="mostrarIndicador6 = false")
+          .indicador--hover(v-if="mostrarIndicador6")
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 1
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 2
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+      .col-lg-4
+        .tarjetas-up__content.p-4.d-flex.align-items-center
+          .tarjetas-up__content__image: img(src='@/assets/curso/temas/ejm.png')
+          .text-center.p-lg-4
+            h5 Tarjeta 3
+            p.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
 
-    p Icono inactivo en escala de grises
+    .row.justify-content-center.mb-4
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Tarj5.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+    Separador
+    #t_13_2.titulo-segundo.color-acento-contenido
+      h2 13.2 Texto destacado
+
+    .bg-carrousel.d-flex.justify-content-center.align-items-center.mb-4(@mouseover="mostrarIndicador5 = false")
+      .indicador--hover(v-if="mostrarIndicador5")
+      h2.h1.text-center.text-white Importante
+      .bg-carrousel_content.px-5.py-5.justify-content-center.d-flex.align-items-center
+        .text-center.w-75
+          p.fw-bold.mb-0 This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t13/Text-Dest.txt')" target="_blank" type="application/pdf")
+          span Ver código fuente
+
+
+    Separador
+    #t_13_3.titulo-segundo.color-acento-contenido
+      h2 13.3 Pestañas o Tabs
+
+    p.mb-5.fst-italic #[strong Nota:] icono inactivo en escala de grises
 
     TabsB.color-primario.escala-grises.mb-4
       .py-4.py-md-5(titulo="The splendor of the mystery" :icono="require('@/assets/componentes/ej-04.svg')")
@@ -180,10 +223,9 @@
           span Ver código fuente  
 
 
-    hr.my-5
-
-    .titulo-segundo.color-acento-contenido
-      h2 Imagen Infografica
+    Separador
+    #t_13_4.titulo-segundo.color-acento-contenido
+      h2 13.4 Imagen Infografica
 
     ImagenInfografica.color-acento-botones.mb-4
       template(v-slot:imagen)
@@ -208,8 +250,8 @@
     .row.mb-5
       .col-lg-12.order-2.order-lg-1
         TabsA.color-acento-botones
-          .tarjeta.clr--gris.p-4(titulo="Requerimientos de información")
-            ul.lista-ul.mb-4
+          .tarjeta.clr--gris.p-4.pb-3(titulo="Requerimientos de información")
+            ul.lista-ul.mb-0
               li
                 i.fas.fa-angle-right.txt--green
                 | No se usa ningún titulo.
@@ -228,6 +270,8 @@ export default {
     mostrarIndicador2: true,
     mostrarIndicador3: true,
     mostrarIndicador4: true,
+    mostrarIndicador5: true,
+    mostrarIndicador6: true,
   }),
   mounted() {
     this.$nextTick(() => {

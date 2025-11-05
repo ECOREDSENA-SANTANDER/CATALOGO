@@ -87,7 +87,7 @@
             p.text-center.mb-0 Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
       
       .row.justify-content-center.mb-5
-        p.text-center #[em Nota: Revisar los estilos para quitar el cursor pointer] 
+        p.text-center.fst-italic #[strong Nota:] Revisar los estilos para quitar el cursor pointer
         .col-auto          
           a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t10/Tarjetas_avatar.txt')" target="_blank" type="application/pdf")
             span Ver código fuente

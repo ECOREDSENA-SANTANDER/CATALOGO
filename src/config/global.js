@@ -288,6 +288,28 @@ export default {
         numero: '13',
         titulo: 'Nuevos componentes',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '13.1',
+            titulo: 'Tarjetas',
+            hash: 't_13_1',
+          },
+          {
+            numero: '13.2',
+            titulo: 'Texto destacado',
+            hash: 't_13_2',
+          },
+          {
+            numero: '13.3',
+            titulo: 'Pestañas o Tabs',
+            hash: 't_13_3',
+          },
+          {
+            numero: '13.4',
+            titulo: 'Imagen Infografica',
+            hash: 't_13_4',
+          },
+        ],
       },
       /*{
         nombreRuta: 'tema14',
