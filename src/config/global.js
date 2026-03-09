@@ -320,6 +320,38 @@ export default {
     ],
     subMenu: [
       {
+        icono: 'fas fa-sitemap',
+        titulo: 'Síntesis',
+        nombreRuta: 'sintesis',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'actividad',
+        icono: 'far fa-question-circle',
+        titulo: 'Actividad didáctica',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'glosario',
+        icono: 'fas fa-sort-alpha-down',
+        titulo: 'Glosario',
+      },
+      {
+        icono: 'fas fa-book',
+        titulo: 'Referencias bibliográficas',
+        nombreRuta: 'referencias',
+      },
+      {
+        icono: 'fas fa-file-pdf',
+        titulo: 'Descargar PDF',
+        download: 'downloads/dist.pdf',
+      },
+      {
+        icono: 'fas fa-download',
+        titulo: 'Descargar material',
+        download: 'downloads/material.zip',
+      },
+      {
         icono: 'far fa-registered',
         titulo: 'Créditos',
         nombreRuta: 'creditos',
@@ -363,16 +395,46 @@ export default {
       ],
     },
     {
+      titulo: 'CONTENIDO INSTRUCCIONAL',
+      autores: [
+        {
+          nombre: ' ',
+          cargo: ' ',
+          centro: 'Centro XYZ - Regional XYZ',
+        },
+      ],
+    },
+    {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Andrea Paola Botello De la Rosa',
+          nombre: ' ',
+          cargo: 'Diseñador de contenidos',
+          centro: 'Centro Agroturístico - Regional Santander',
+        },
+        {
+          nombre: ' ',
           cargo: 'Desarrollador <i>full stack</i>',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: 'Lizeth Karina Manchego',
-          cargo: 'Desarrollador <i>full stack</i>',
+          nombre: ' ',
+          cargo: 'Animador y productor audiovisual',
+          centro: 'Centro Agroturístico - Regional Santander',
+        },
+      ],
+    },
+    {
+      titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
+      autores: [
+        {
+          nombre: ' ',
+          cargo: 'Validador y vinculador de recursos educativos digitales',
+          centro: 'Centro Agroturístico - Regional Santander',
+        },
+        {
+          nombre: ' ',
+          cargo: 'Evaluador de contenidos inclusivos y accesibles',
           centro: 'Centro Agroturístico - Regional Santander',
         },
       ],

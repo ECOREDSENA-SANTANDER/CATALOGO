@@ -1,1 +1,1 @@
-module.exports = 'Catálogo componentes web RED SENA SANTANDER'
+module.exports = 'Ecored Base PKG'

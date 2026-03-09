@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Inicio from 'ecored-pkg-fliz/plugin/components/Inicio.vue'
-import Curso from 'ecored-pkg-fliz/plugin/components/plantilla/Curso.vue'
-import Glosario from 'ecored-pkg-fliz/plugin/components/Glosario.vue'
-import Referencias from 'ecored-pkg-fliz/plugin/components/Referencias.vue'
-import Creditos from 'ecored-pkg-fliz/plugin/components/Creditos.vue'
-import Complementario from 'ecored-pkg-fliz/plugin/components/Complementario.vue'
+import Inicio from '@ecoredsena.dev/ecored-pkg-sena/plugin/components/Inicio.vue'
+import Curso from '@ecoredsena.dev/ecored-pkg-sena/plugin/components/plantilla/Curso.vue'
+import Glosario from '@ecoredsena.dev/ecored-pkg-sena/plugin/components/Glosario.vue'
+import Referencias from '@ecoredsena.dev/ecored-pkg-sena/plugin/components/Referencias.vue'
+import Creditos from '@ecoredsena.dev/ecored-pkg-sena/plugin/components/Creditos.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +14,12 @@ const router = new VueRouter({
       path: '/',
       name: 'inicio',
       component: Inicio,
+    },
+    {
+      path: '/introduccion',
+      name: 'introduccion',
+      component: () =>
+        import(/* webpackChunkName: "intro" */ '../views/Introduccion.vue'),
     },
     {
       path: '/curso',
@@ -115,6 +120,28 @@ const router = new VueRouter({
             import(/* webpackChunkName: "tema15" */ '../views/Tema15.vue'),
         },
       ],
+    },
+    {
+      path: '/actividad',
+      name: 'actividad',
+      component: () =>
+        import(/* webpackChunkName: "actividad" */ '../views/Actividad.vue'),
+    },
+    {
+      path: '/glosario',
+      name: 'glosario',
+      component: Glosario,
+    },
+    {
+      path: '/referencias',
+      name: 'referencias',
+      component: Referencias,
+    },
+    {
+      path: '/sintesis',
+      name: 'sintesis',
+      component: () =>
+        import(/* webpackChunkName: "sintesis" */ '../views/sintesis.vue'),
     },
     {
       path: '/creditos',
