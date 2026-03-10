@@ -1,3 +1,5 @@
+@use 'sass:color'
+@use '../variables' as *
 .bloque-texto-a
   position: relative
   &:before
@@ -14,19 +16,19 @@
     background-color: $white
 
   &.color-primario
-    background-color: lighten($color-primario, 55%)
+    background-color: color.adjust($color-primario, $lightness: 55%)
     &:before
       background-color: $color-primario
   &.color-secundario
-    background-color: lighten($color-secundario, 20%)
+    background-color: color.adjust($color-secundario, $lightness: 20%)
     &:before
       background-color: $color-secundario
   &.color-acento-contenido
-    background-color: lighten($color-acento-contenido, 25%)
+    background-color: color.adjust($color-acento-contenido, $lightness: 25%)
     &:before
       background-color: $color-acento-contenido
   &.color-acento-botones
-    background-color: lighten($color-acento-botones, 30%)
+    background-color: color.adjust($color-acento-botones, $lightness: 30%)
     &:before
       background-color: $color-acento-botones
 

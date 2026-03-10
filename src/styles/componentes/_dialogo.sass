@@ -1,3 +1,6 @@
+@use 'sass:color'
+@use '../variables' as *
+@use '../reset/mixins' as *
 $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-secundario, 'color-acento-contenido': $color-acento-contenido, 'color-acento-botones': $color-acento-botones, 'color-adicional-1': $color-adicional-1, 'color-adicional-2': $color-adicional-2)
 .dialogo
   border: 2px solid
@@ -48,6 +51,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
       &__message
         display: inline-block
         &__container
+          display: block
         &__bubble
           text-align: left
           padding: 1em
@@ -92,6 +96,8 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
               display: inline-block
               min-width: 50px
 
+          &__audio
+            display: block
           &__esp
             .dialogo__chat__item__message__text__drop
               border-bottom-color: transparent
@@ -100,6 +106,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
               color: $dark-gray
 
         &__audio
+          display: block
 
         &__translate-btn
           padding: 0.3rem 0.6rem 0.4rem 0.6rem
@@ -124,7 +131,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
             background-color: $value
             color: textColor($value)
             &:hover
-              background-color: lighten($value, 20%)
+              background-color: color.adjust($value, $lightness: 20%)
 
           &.borde
             .dialogo__chat__item__message__bubble--tail
@@ -162,7 +169,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
           background-color: $value
           color: textColor($value)
           &:hover
-            background-color: lighten($value, 20%)
+            background-color: color.adjust($value, $lightness: 20%)
 
   &__words
     display: flex
@@ -202,7 +209,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
         background-color: $value
         color: textColor($value)
         &:hover
-          background-color: lighten($value, 20%)
+          background-color: color.adjust($value, $lightness: 20%)
       .dialogo
         &__header
           background-color: $value
@@ -210,7 +217,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
             color: textColor($value)
         &__words
           &__word
-            background-color: lighten($value, 50%)
+            background-color: color.adjust($value, $lightness: 50%)
             color: $value
 
 .dialogoChat
@@ -259,6 +266,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
       &__message
         display: inline-block
         &__container
+          display: block
         &__bubble
           text-align: left
           padding: 1em
@@ -279,6 +287,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
           @media (max-width: 768px)
             padding: 0.5em
         &__audio
+          display: block
 
       &:nth-child(even)
         flex-direction: row-reverse
@@ -303,7 +312,7 @@ $colors-list: ( 'color-primario': $color-primario, 'color-secundario': $color-se
         background-color: $value
         color: textColor($value)
         &:hover
-          background-color: lighten($value, 20%)
+          background-color: color.adjust($value, $lightness: 20%)
       .dialogo
         &__header
           background-color: $value

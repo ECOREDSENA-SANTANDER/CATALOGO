@@ -1,14 +1,12 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Inicio from '@ecored-sena/base-kit/plugin/components/Inicio.vue'
-import Curso from '@ecored-sena/base-kit/plugin/components/plantilla/Curso.vue'
-import Glosario from '@ecored-sena/base-kit/plugin/components/Glosario.vue'
-import Referencias from '@ecored-sena/base-kit/plugin/components/Referencias.vue'
-import Creditos from '@ecored-sena/base-kit/plugin/components/Creditos.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Inicio from '@ecored-sena/qa-kit/plugin/components/Inicio.vue'
+import Curso from '@ecored-sena/qa-kit/plugin/components/plantilla/Curso.vue'
+import Glosario from '@ecored-sena/qa-kit/plugin/components/Glosario.vue'
+import Referencias from '@ecored-sena/qa-kit/plugin/components/Referencias.vue'
+import Creditos from '@ecored-sena/qa-kit/plugin/components/Creditos.vue'
 
-Vue.use(VueRouter)
-
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -113,12 +111,6 @@ const router = new VueRouter({
           component: () =>
             import(/* webpackChunkName: "tema14" */ '../views/Tema14.vue'),
         },
-        {
-          path: 'tema15',
-          name: 'tema15',
-          component: () =>
-            import(/* webpackChunkName: "tema15" */ '../views/Tema15.vue'),
-        },
       ],
     },
     {
@@ -152,14 +144,14 @@ const router = new VueRouter({
   scrollBehavior(to, from) {
     if (to.hash) {
       const newRoute = {
-        selector: to.hash,
-        offset: { y: 100 },
+        el: to.hash,
+        top: 100,
         behavior: 'smooth',
       }
       if (to.name === from.name) {
         return newRoute
       } else {
-        return new Promise(resolve => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             resolve(newRoute)
           }, 500)

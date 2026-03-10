@@ -77,26 +77,7 @@
                 li 
                   i.fas.fa-angle-right.txt--green
                   | Imágenes (optativas): Añaden interés gráfico e información adicional.
-              //.tarjeta.color-primario.p-3.mb-4
-                .row.justify-content-around.align-items-center
-                  .col-auto
-                    img(src="@/assets/template/document.svg").img65
-                  .col
-                    .row.justify-content-between.align-items-center
-                      .col.mb-3.mb-sm-0
-                        h4.mb-1 Formato instruccional - línea de tiempo
-                        p.mb-0 Formato de Diseño Instruccional para la creación de una línea de tiempo. 
-                      .col-sm-auto
-                        a.boton.color-botones.texto-blanco(href="https://docs.google.com/document/d/1f4bPp_jRW5aIfr-p7DORAtjSh_EB787rw67z0VBF2ew/edit?usp=sharing" target="_blank")
-                          span Descargar
-                          i.fas.fa-file-download   
-              //.row.justify-content-start
-                .col-auto
-                  a.anexo.bg2(href="https://drive.google.com/file/d/1d8bzZ4-G9sGMdbtpHMS3Q-xVXlvythoQ/view?usp=sharing" target="_blank")
-                    .anexo__icono
-                      img(src="@/assets/template/icono-pdf.svg")
-                    .anexo__texto
-                      p Formato instruccional - muestra        
+                    
   
 
       Separador

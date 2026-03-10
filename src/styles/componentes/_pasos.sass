@@ -1,3 +1,5 @@
+@use '../variables' as *
+@use '../reset/mixins' as *
 .pasos-a
   position: relative
 
@@ -252,7 +254,7 @@
 
 
       &--left, &--right
-        @extend .linea-tiempo-c__header__btn
+        @extend .linea-tiempo-c__header__btn !optional
 
 
     .horizontal-scroll

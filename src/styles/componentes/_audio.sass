@@ -1,3 +1,5 @@
+@use 'sass:color'
+@use '../variables' as *
 .audio
   width: 34px
   height: 34px
@@ -21,42 +23,42 @@
     .audio__btn
       background-color: $color-primario
       &:hover
-        background-color: darken($color-primario,10%)
+        background-color: color.adjust($color-primario, $lightness: -10%)
     .spinner-border
       border-color: $color-primario
   &.color-secundario
     .audio__btn
       background-color: $color-secundario
       &:hover
-        background-color: darken($color-secundario,10%)
+        background-color: color.adjust($color-secundario, $lightness: -10%)
     .spinner-border
       border-color: $color-secundario
   &.color-acento-contenido
     .audio__btn
       background-color: $color-acento-contenido
       &:hover
-        background-color: darken($color-acento-contenido,10%)
+        background-color: color.adjust($color-acento-contenido, $lightness: -10%)
     .spinner-border
       border-color: $color-acento-contenido
   &.color-acento-botones
     .audio__btn
       background-color: $color-acento-botones
       &:hover
-        background-color: darken($color-acento-botones,10%)
+        background-color: color.adjust($color-acento-botones, $lightness: -10%)
     .spinner-border
       border-color: $color-acento-botones
   &.color-adicional-1
     .audio__btn
       background-color: $color-adicional-1
       &:hover
-        background-color: darken($color-adicional-1,10%)
+        background-color: color.adjust($color-adicional-1, $lightness: -10%)
     .spinner-border
       border-color: $color-adicional-1
   &.color-adicional-2
     .audio__btn
       background-color: $color-adicional-2
       &:hover
-        background-color: darken($color-adicional-2,10%)
+        background-color: color.adjust($color-adicional-2, $lightness: -10%)
     .spinner-border
       border-color: $color-adicional-2
 

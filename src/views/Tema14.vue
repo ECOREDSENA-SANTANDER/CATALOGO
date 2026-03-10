@@ -21,39 +21,14 @@
           span Ver código fuente
 
 
-    //.row.justify-content-center.align-items-center.mb-5
-      .col-lg-8
-        .tarjeta.color-primario.p-3
-          .row.justify-content-around.align-items-center
-            .col-auto
-              img(src="@/assets/template/document.svg").img65
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  h4.mb-1 Formato instruccional - Diálogo Ingles/Español
-                  p.text-small.mb-0 Formato de Diseño Instruccional para la creación de actividades didácticas tipo dialogo.
-                .col-sm-auto
-                  a.boton.color-acento-botones(href="https://docs.google.com/document/d/1oQ27-xOnozTqJxihAnnBHwbMWn4cgNp-6WbQXjvt-hQ/edit?usp=sharing" target="_blank")
-                    span Descargar
-                    i.fas.fa-file-download
-      .col-lg-4
-        a.anexo(href="https://drive.google.com/file/d/1qoDmgphh4r-TxVu_M1ZVYg_CODgNteJE/view?usp=sharing" target="_blank")
-          .anexo__icono
-            img(src="@/assets/template/icono-pdf.svg")
-          .anexo__texto
-            p Formato instruccional - muestra
 
 
 
 </template>
 
 <script>
-import Dialogo from '../components/Dialogo.vue'
 export default {
   name: 'Tema5',
-  components: {
-    Dialogo,
-  },
   data() {
     return {
       dialogo: {

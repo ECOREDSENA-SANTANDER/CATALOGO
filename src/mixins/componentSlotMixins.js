@@ -26,7 +26,7 @@ export default {
     },
     navObj() {
       if (!this.elements.length || !this.secuencial) return {}
-      const idsArr = this.elements.map(elm => elm.id)
+      const idsArr = this.elements.map((elm) => elm.id)
       const idxOfSelected = idsArr.indexOf(this.selected)
       if (idxOfSelected < 0) return {}
 
@@ -75,7 +75,7 @@ export default {
       return this.$refs[id][0].scrollHeight + 'px'
     },
     getStateStr() {
-      return this.$slots.default.map(elm => elm.elm.outerHTML).join('')
+      return this.$slots.default.map((elm) => elm.elm.outerHTML).join('')
     },
     domUpdated() {
       this.rendered = false

@@ -1,78 +1,80 @@
+@use 'sass:color'
+@use '../variables' as *
 .info-state
-  color: darken($color-info, 15%)
+  color: color.adjust($color-info, $lightness: -15%)
   p
-    color: darken($color-info, 15%)
+    color: color.adjust($color-info, $lightness: -15%)
 
 .info-state-bg
   @extend .info-state
-  background-color: lighten($color-info, 33%)
+  background-color: color.adjust($color-info, $lightness: 33%)
 
 
 .success-state
-  color: darken($color-success, 15%)
+  color: color.adjust($color-success, $lightness: -15%)
   p
-    color: darken($color-success, 15%)
+    color: color.adjust($color-success, $lightness: -15%)
   label
-    color: darken($color-success, 15%)
+    color: color.adjust($color-success, $lightness: -15%)
   [type='color'], [type='date'], [type='datetime'], [type='datetime-local'],
   [type='email'], [type='month'], [type='number'], [type='password'],
   [type='search'], [type='tel'], [type='text'], [type='time'],
   [type='url'], [type='week'], input:not([type]),textarea, 
   select, select[multiple]
-    background-color: lighten($color-success, 40%)
+    background-color: color.adjust($color-success, $lightness: 40%)
     border-color: $color-success
-    color: darken($color-success, 15%)
+    color: color.adjust($color-success, $lightness: -15%)
     &:focus
       border-color: $color-success
-      box-shadow: $form-box-shadow, 0 0 5px adjust-color($color-success, $lightness: -5%, $alpha: -0.3)
+      box-shadow: $form-box-shadow, 0 0 5px color.adjust($color-success, $lightness: -5%, $alpha: -0.3)
 
 .success-state-bg
   @extend .success-state
-  background-color: lighten($color-success, 37%)
+  background-color: color.adjust($color-success, $lightness: 37%)
 
 
 .warning-state
-  color: darken($color-warning, 45%)
+  color: color.adjust($color-warning, $lightness: -45%)
   p
-    color: darken($color-warning, 45%)
+    color: color.adjust($color-warning, $lightness: -45%)
   label
-    color: darken($color-warning, 45%)
+    color: color.adjust($color-warning, $lightness: -45%)
   [type='color'], [type='date'], [type='datetime'], [type='datetime-local'],
   [type='email'], [type='month'], [type='number'], [type='password'],
   [type='search'], [type='tel'], [type='text'], [type='time'],
   [type='url'], [type='week'], input:not([type]),textarea, 
   select, select[multiple]
-    background-color: lighten($color-warning, 23%)
+    background-color: color.adjust($color-warning, $lightness: 23%)
     border-color: $color-warning
-    color: darken($color-warning, 40%)
+    color: color.adjust($color-warning, $lightness: -40%)
     &:focus
       border-color: $color-warning
-      box-shadow: $form-box-shadow, 0 0 5px adjust-color($color-warning, $alpha: -0.3)
+      box-shadow: $form-box-shadow, 0 0 5px color.adjust($color-warning, $alpha: -0.3)
 
 .warning-state-bg
   @extend .warning-state
-  background-color: lighten($yellow, 32%)
+  background-color: color.adjust($yellow, $lightness: 32%)
 
 
 .danger-state
-  color: darken($color-danger, 15%)
+  color: color.adjust($color-danger, $lightness: -15%)
   p
-    color: darken($color-danger, 15%)
+    color: color.adjust($color-danger, $lightness: -15%)
   label
-    color: darken($color-danger, 15%)
+    color: color.adjust($color-danger, $lightness: -15%)
   [type='color'], [type='date'], [type='datetime'], [type='datetime-local'],
   [type='email'], [type='month'], [type='number'], [type='password'],
   [type='search'], [type='tel'], [type='text'], [type='time'],
   [type='url'], [type='week'], input:not([type]),textarea, 
   select, select[multiple]
-    background-color: lighten($color-danger, 41%)
+    background-color: color.adjust($color-danger, $lightness: 41%)
     border-color: $color-danger
-    color: darken($color-danger, 15%)
+    color: color.adjust($color-danger, $lightness: -15%)
     &:focus
       border-color: $color-danger
-      box-shadow: $form-box-shadow, 0 0 5px adjust-color($color-danger, $lightness: -5%, $alpha: -0.3)
+      box-shadow: $form-box-shadow, 0 0 5px color.adjust($color-danger, $lightness: -5%, $alpha: -0.3)
 
 
 .danger-state-bg
   @extend .danger-state
-  background-color: lighten($color-danger, 39%)
+  background-color: color.adjust($color-danger, $lightness: 39%)

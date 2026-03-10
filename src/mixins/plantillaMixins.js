@@ -4,8 +4,10 @@ export default {
       return this.$config.menuPrincipal.menu
     },
     iniciarLnk() {
-      const lnk = this.menuData.find(item => item.nombreRuta === 'introduccion')
-      const tema1 = this.menuData.find(item => item.nombreRuta === 'tema1')
+      const lnk = this.menuData.find(
+        (item) => item.nombreRuta === 'introduccion',
+      )
+      const tema1 = this.menuData.find((item) => item.nombreRuta === 'tema1')
       return lnk || tema1
     },
   },
@@ -26,7 +28,7 @@ export default {
       }
       return strNoHtml
         .split('')
-        .map(letra => acentos[letra] || letra)
+        .map((letra) => acentos[letra] || letra)
         .join('')
         .toString()
     },

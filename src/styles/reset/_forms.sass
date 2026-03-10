@@ -1,3 +1,6 @@
+@use 'sass:math'
+@use 'sass:color'
+@use '../variables' as *
 input, select, textarea
   margin: 0
   display: block
@@ -18,12 +21,12 @@ select, select[multiple]
   box-shadow: $form-box-shadow
   box-sizing: inherit
   margin-bottom: $small-spacing
-  padding: $base-spacing / 3
+  padding: math.div($base-spacing, 3)
   transition: border-color $base-duration $base-timing
   width: 100%
 
   &:hover
-    border-color: shade($base-border-color, 20%)
+    border-color: color.adjust($base-border-color, $lightness: -20%)
 
   &:focus
     border-color: $color-acento-contenido
@@ -31,7 +34,7 @@ select, select[multiple]
     outline: none
 
   &:disabled
-    background-color: shade($form-background-color, 5%)
+    background-color: color.adjust($form-background-color, $lightness: -5%)
     cursor: not-allowed
 
     &:hover
@@ -75,7 +78,7 @@ legend
   padding: 0
   white-space: normal
   font-weight: 600
-  margin-bottom: $small-spacing / 2
+  margin-bottom: math.div($small-spacing, 2)
 
   -webkit-padding-start: 0
   -webkit-padding-end: 0
@@ -86,7 +89,7 @@ label
   font-size: $label-font-size
   font-family: $label-font-family
   font-weight: $label-font-weight
-  margin-bottom: $small-spacing / 2
+  margin-bottom: math.div($small-spacing, 2)
 
 textarea
   overflow: auto
@@ -96,7 +99,7 @@ textarea
   box-sizing: border-box
   padding: 0
   display: inline
-  margin-right: $small-spacing / 2
+  margin-right: math.div($small-spacing, 2)
 
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button
   height: auto

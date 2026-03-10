@@ -311,12 +311,12 @@ export default {
           },
         ],
       },
-      /*{
+      {
         nombreRuta: 'tema14',
         numero: '14',
         titulo: 'Dialogos',
         desarrolloContenidos: true,
-      },*/
+      },
     ],
     subMenu: [
       {

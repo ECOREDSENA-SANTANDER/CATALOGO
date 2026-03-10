@@ -13,7 +13,7 @@ export default {
         personaje:
           dialogoObj.personajes &&
           dialogoObj.personajes.find(
-            personaje => personaje.nombre === line.personaje,
+            (personaje) => personaje.nombre === line.personaje,
           ),
       }))
     },

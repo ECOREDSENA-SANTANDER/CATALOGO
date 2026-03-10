@@ -207,7 +207,7 @@
       hr.my-5
       .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img(
-          :style="{'background-image': `url(${require('@/assets/curso/temas/ejm.png')})`}")
+          :style="{ backgroundImage: `url(${imgEjm})` }")
         .bloque-texto-g__texto.p-4
           p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
             br
@@ -221,7 +221,7 @@
       hr.my-5
       .bloque-texto-g.bloque-texto-g--inverso.color-secundario.p-3.p-sm-4.p-md-5
         .bloque-texto-g__img(
-          :style="{'background-image': `url(${require('@/assets/curso/temas/ejm.png')})`}")
+          :style="{ backgroundImage: `url(${imgEjm})` }")
         .bloque-texto-g__texto.p-4
           p.mb-0 Think about all the possibilities. A good composition is the result of a hierarchy consisting of clearly contrasting elements set with distinct alignments containing irregular intervals of negative space. Nothing of without working at it. Be impossible to ignore.
             br
@@ -415,21 +415,22 @@
           h4.mb-0 Niveles del lenguaje
         table
           caption Leyenda de la tabla
-          tr
-            th Vulgar
-            td Get back to work. Learn from criticism. Creativity is a work-ethic. Design as if your life depended on it. Keep going. It isn’t what you are.
-          tr
-            th Coloquial
-            td It isn’t what you are, but what you’re going to become. Don’t censor yourself.  Sterility leads to susceptibility.It is, in effect, conditioned to prefer bad design.
-          tr
-            th Convencional o estándar
-            td Paul Rand once said, “The public is more familiar with bad design than good design. leassuring. You are not your work. Don’t fucking lie to yourself. Life depended on it. Keep going
-          tr
-            th Técnico
-            td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
-          tr
-            th Formal
-            td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
+          tbody
+            tr
+              th Vulgar
+              td Get back to work. Learn from criticism. Creativity is a work-ethic. Design as if your life depended on it. Keep going. It isn’t what you are.
+            tr
+              th Coloquial
+              td It isn’t what you are, but what you’re going to become. Don’t censor yourself.  Sterility leads to susceptibility.It is, in effect, conditioned to prefer bad design.
+            tr
+              th Convencional o estándar
+              td Paul Rand once said, “The public is more familiar with bad design than good design. leassuring. You are not your work. Don’t fucking lie to yourself. Life depended on it. Keep going
+            tr
+              th Técnico
+              td The new becomes threatening, the old reassuring.” You are not your work. Don’t lie to yourself. Never, never assume that what Respect your craft. Widows and orphans are terrible.
+            tr
+              th Formal
+              td Design as if your life depended on it. Keep going. It isn’t what you are, but what you’re going to become. Don’t censor yourself. 
       .row.justify-content-center.mb-5
         .col-auto
           a.boton.color-botones(:href="obtenerLink('/downloads/t1/Tabla2.txt')" target="_blank" type="application/pdf")
@@ -440,50 +441,51 @@
       .tabla-c.mb-4
         table
           caption Leyenda de la tabla
-          tr
-            th 03 de marzo
-            td 
-              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
-            td
-              .h6.mb-0 $12.500.200
-            td
-              .h6.mb-0 $12.500.200
-              span.text-small Textos pequeños
-            td
-              .h6 FDSD33
-          tr
-            th 03 de marzo
-            td 
-              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
-            td
-              .h6.mb-0 $12.500.200
-            td
-              .h6.mb-0 $12.500.200
-              span.text-small Textos pequeños
-            td
-              .h6 FDSD33
-          tr
-            th 03 de marzo
-            td 
-              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
-            td
-              .h6.mb-0 $12.500.200
-            td
-              .h6.mb-0 $12.500.200
-              span.text-small Textos pequeños
-            td
-              .h6 FDSD33
-          tr
-            th 03 de marzo
-            td 
-              p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
-            td
-              .h6.mb-0 $12.500.200
-            td
-              .h6.mb-0 $12.500.200
-              span.text-small Textos pequeños
-            td
-              .h6 FDSD33          
+          tbody
+            tr
+              th 03 de marzo
+              td 
+                p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+              td
+                .h6.mb-0 $12.500.200
+              td
+                .h6.mb-0 $12.500.200
+                span.text-small Textos pequeños
+              td
+                .h6 FDSD33
+            tr
+              th 03 de marzo
+              td 
+                p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+              td
+                .h6.mb-0 $12.500.200
+              td
+                .h6.mb-0 $12.500.200
+                span.text-small Textos pequeños
+              td
+                .h6 FDSD33
+            tr
+              th 03 de marzo
+              td 
+                p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+              td
+                .h6.mb-0 $12.500.200
+              td
+                .h6.mb-0 $12.500.200
+                span.text-small Textos pequeños
+              td
+                .h6 FDSD33
+            tr
+              th 03 de marzo
+              td 
+                p.text-small Donec mattis libero quis nisi euismod, a sodales magna porttitor. Morbi nunc elit, feugiat a nisl eu, venenatis ultrices dui. Suspendisse at sodales est
+              td
+                .h6.mb-0 $12.500.200
+              td
+                .h6.mb-0 $12.500.200
+                span.text-small Textos pequeños
+              td
+                .h6 FDSD33          
       .row.justify-content-center.mb-5
         .col-auto
           a.boton.color-botones.texto-blanco(:href="obtenerLink('/downloads/t1/Tabla3.txt')" target="_blank" type="application/pdf")
@@ -672,13 +674,10 @@
   </template>
 
 <script>
-import ModalA from '../components/ModalA.vue'
 export default {
   name: 'Tema1',
-  components: {
-    ModalA,
-  },
   data: () => ({
+    imgEjm: require('@/assets/curso/temas/ejm.png'),
     mostrarIndicador: true,
     modal1: false,
     modal2: false,

@@ -1,3 +1,5 @@
+@use '../variables' as *
+@use '../reset/mixins' as *
 .tabs-a
   &__tab
     display: block
@@ -88,6 +90,7 @@
 .tabs-b
   border-bottom: 1px solid #AFAFAF
   &__header
+    display: flex
   &__tab
     display: flex
     flex-direction: column
@@ -146,6 +149,7 @@
         border-left: 2px solid #AFAFAF
 
   &__content-item
+    display: block
 
   &.color-primario
     .tabs-b__tab--active
